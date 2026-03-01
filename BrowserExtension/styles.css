@@ -1,0 +1,39 @@
+.verter-download-btn {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    margin: 0 8px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background 0.2s, transform 0.1s;
+    background: #BB86FC;
+    color: #121212;
+}
+
+.verter-download-btn:hover {
+    background: #a370e0;
+    transform: scale(1.02);
+}
+
+.verter-download-btn:active {
+    transform: scale(0.98);
+}
+
+.verter-download-btn.success {
+    background: #03DAC6;
+}
+
+.verter-icon {
+    margin-right: 6px;
+}
+
+/* YouTube Music specific adjustments */
+.verter-download-btn.music {
+    padding: 4px 10px;
+    margin: 0 4px;
+    height: 32px;
+}
