@@ -7,7 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {},
     ".NETCoreApp,Version=v8.0/win-x64": {
-      "VERTER/1.0.0": {
+      "ZERTER/1.0.0": {
         "dependencies": {
           "Avalonia": "11.3.12",
           "Avalonia.Desktop": "11.3.12",
@@ -20,7 +20,7 @@
           "YoutubeExplode.Converter": "6.5.7"
         },
         "runtime": {
-          "VERTER.dll": {}
+          "ZERTER.dll": {}
         }
       },
       "AngleSharp/1.4.0": {
@@ -424,7 +424,7 @@
     }
   },
   "libraries": {
-    "VERTER/1.0.0": {
+    "ZERTER/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

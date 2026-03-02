@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "VERTER YouTube Downloader",
+  "name": "ZERTER YouTube Downloader",
   "version": "1.0",
-  "description": "YouTube videolarını tek tıkla VERTER'e ekleyin.",
+  "description": "YouTube videolarını tek tıkla ZERTER'e ekleyin.",
   "permissions": [
     "clipboardWrite"
   ],

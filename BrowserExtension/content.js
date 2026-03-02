@@ -6,7 +6,7 @@ async function checkStatus(btn, url) {
         const response = await fetch(`http://localhost:9001/check?url=${encodeURIComponent(url)}`);
         const data = await response.json();
 
-        const textElement = btn.querySelector(".verter-text");
+        const textElement = btn.querySelector(".zerter-text");
         if (!textElement) return;
 
         switch (data.status) {
@@ -25,15 +25,15 @@ async function checkStatus(btn, url) {
             case "none":
             default:
                 if (!btn.classList.contains("success")) {
-                    textElement.innerText = "VERTER ile İndir";
+                    textElement.innerText = "ZERTER ile İndir";
                     btn.style.background = "#BB86FC";
                 }
                 break;
         }
     } catch (e) {
-        const textElement = btn.querySelector(".verter-text");
+        const textElement = btn.querySelector(".zerter-text");
         if (textElement && !btn.classList.contains("success")) {
-            textElement.innerText = "VERTER (Bağlantı Yok)";
+            textElement.innerText = "ZERTER (Bağlantı Yok)";
             btn.style.background = "#555";
         }
     }
@@ -48,20 +48,20 @@ function injectButton() {
     const container = document.querySelector(selector);
     if (!container) return;
 
-    let btn = container.querySelector(".verter-download-btn");
+    let btn = container.querySelector(".zerter-download-btn");
 
     if (!btn) {
         btn = document.createElement("button");
-        btn.className = "verter-download-btn " + (isMusic ? "music" : "main");
+        btn.className = "zerter-download-btn " + (isMusic ? "music" : "main");
         btn.innerHTML = `
-            <span class="verter-text">VERTER ile İndir</span>
+            <span class="zerter-text">ZERTER ile İndir</span>
         `;
 
         btn.onclick = (e) => {
             e.stopPropagation();
             const url = window.location.href;
             navigator.clipboard.writeText(url).then(() => {
-                const textElement = btn.querySelector(".verter-text");
+                const textElement = btn.querySelector(".zerter-text");
                 textElement.innerText = "Eklendi!";
                 btn.classList.add("success");
                 setTimeout(() => {
@@ -87,7 +87,7 @@ function injectButton() {
 function startPolling() {
     if (checkInterval) clearInterval(checkInterval);
     checkInterval = setInterval(() => {
-        const btn = document.querySelector(".verter-download-btn");
+        const btn = document.querySelector(".zerter-download-btn");
         if (btn) checkStatus(btn, window.location.href);
         injectButton();
     }, 3000);
