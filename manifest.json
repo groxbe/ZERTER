@@ -1,7 +1,7 @@
 ﻿{
     "files":  [
                   {
-                      "hash":  "4934A18EE39984BE56B4E74BC8BDB041FF634D337402DD12E644FB3F3F428004",
+                      "hash":  "33B436478D528F8DED5046ABAAB93CAC020B854A6DC5A2EAD55864D3990E7422",
                       "path":  "manifest.json"
                   },
                   {
@@ -933,5 +933,5 @@
                       "path":  "publish/wwwroot/youtube/Resources/youtube_logo.webp"
                   }
               ],
-    "version":  "1.5.1"
+    "version":  "1.5.2"
 }
