@@ -893,7 +893,7 @@
                       "path":  "ZERTER.deps.json"
                   },
                   {
-                      "hash":  "6745FA0F78350B3EB0590EB4E5CBE1993940BA7D26AE0E56115D98AF77012FE9",
+                      "hash":  "74B1C83C9718AFC3D1393EBCE480D37235DF1104DCF20F4B26F11D5466C90940",
                       "path":  "ZERTER.dll"
                   },
                   {
@@ -901,7 +901,7 @@
                       "path":  "ZERTER.exe"
                   },
                   {
-                      "hash":  "E07D4D1EAABC38B2E59EB14D2D06366CD949E426F665B6A0944F98210248E0B4",
+                      "hash":  "0CACC48847B8D1D66F1238B329E189B8A25F306211A085F15CC3138BF9840B9D",
                       "path":  "ZERTER.pdb"
                   },
                   {
@@ -929,5 +929,5 @@
                       "path":  "wwwroot/youtube/Resources/youtube_logo.webp"
                   }
               ],
-    "version":  "1.5.3"
+    "version":  "1.5.4"
 }
