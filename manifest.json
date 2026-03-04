@@ -1,0 +1,7 @@
+{
+  "version": "1.0.1",
+  "files": [
+    { "path": "VERTER.dll", "hash": "kendi-hash-kodunuz" },
+    { "path": "wwwroot/youtube/index.html", "hash": "kendi-hash-kodunuz" }
+  ]
+}
