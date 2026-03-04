@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZERTER</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="icon" type="image/icon" href="Resources/favicon_32x32.png" sizes="32x32">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<style>
+		/* ── Dark Mode Override (complete) ──────────────────────── */
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+			scrollbar-color: #3f3f3f #0f0f0f;
+		}
+
+		html {
+			background: var(--bg-color);
+		}
+
+		body {
+			background-color: var(--bg-color) !important;
+			color: var(--text-main) !important;
+			scroll-padding-top: 56px;
+			overflow: hidden;
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		}
+
+		span,
+		a,
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: inherit;
+		}
+
+		.header-container {
+			background-color: var(--card-bg) !important;
+			border-bottom: 1px solid var(--border-color);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+		}
+
+		.sidebar {
+			background-color: var(--card-bg) !important;
+			border-right: 1px solid var(--border-color);
+			top: 56px !important;
+			width: 242px;
+			transition: width .2s ease;
+		}
+
+		.sidebar.shrink {
+			width: 72px;
+		}
+
+		.sidebar.shrink .sidebar-category span:not(.iconify),
+		.sidebar.shrink hr,
+		.sidebar.shrink .head-text,
+		.sidebar.shrink .sidebar-bottom-info {
+			display: none;
+		}
+
+		.sidebar.shrink .sidebar-category {
+			padding: 16px 0;
+			display: flex;
+			justify-content: center;
+		}
+
+		.sidebar.shrink .sidebar-category-sml {
+			display: none;
+		}
+
+		.main-content {
+			background: var(--bg-color) !important;
+			margin-left: 242px;
+			transition: margin-left .2s ease;
+		}
+
+		.sidebar.shrink~.main-content,
+		.sidebar.shrink~.header-navbar {
+			margin-left: 72px;
+		}
+
+		.header-navbar {
+			background: var(--card-bg) !important;
+			border-bottom: 1px solid var(--border-color);
+			top: 56px !important;
+			position: fixed;
+			left: 242px;
+			right: 0;
+			z-index: 999;
+		}
+
+		.sidebar-category,
+		.sidebar-category-sml {
+			color: var(--text-main) !important;
+			border-radius: 10px;
+		}
+
+		.sidebar-category:hover {
+			background: var(--hover-bg) !important;
+		}
+
+		.sidebar-category.selected {
+			background: var(--border-color) !important;
+			font-weight: 600;
+		}
+
+		.navbar-element {
+			background: var(--hover-bg) !important;
+			color: var(--text-main) !important;
+			border: none;
+			border-radius: 8px;
+			padding: 6px 14px;
+			font-size: 14px;
+			cursor: pointer;
+			white-space: nowrap;
+			transition: background .15s;
+		}
+
+		.navbar-element:hover {
+			background: var(--border-color) !important;
+		}
+
+		.navbar-element.active {
+			background: var(--text-main) !important;
+			color: var(--bg-color) !important;
+			font-weight: 600;
+		}
+
+		.head-text {
+			color: var(--text-sub) !important;
+		}
+
+		.sidebar-bottom-info a {
+			color: var(--text-sub) !important;
+		}
+
+		hr {
+			border-color: var(--border-color) !important;
+		}
+
+		input[type="text"] {
+			background: var(--search-bg) !important;
+			border: 1px solid var(--border-color) !important;
+			color: var(--text-main) !important;
+			border-radius: 40px 0 0 40px;
+		}
+
+		input[type="text"]:focus {
+			border-color: #3ea6ff !important;
+			outline: none;
+		}
+
+		input[type="text"]::placeholder {
+			color: var(--text-sub);
+		}
+
+		button.user-btn {
+			color: var(--text-main) !important;
+			background: transparent;
+			border: none;
+		}
+
+		.btm-nav {
+			background: var(--card-bg) !important;
+			border-top: 1px solid var(--border-color);
+		}
+
+		.video .title h3 {
+			color: var(--text-main) !important;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.4;
+		}
+
+		.video .title a,
+		.video .title a:active,
+		.video .title a:visited {
+			color: var(--text-sub) !important;
+			text-decoration: none;
+			font-size: 13px;
+		}
+
+		.video .title span {
+			color: var(--text-sub) !important;
+			font-size: 12px;
+		}
+
+		::-webkit-scrollbar {
+			width: 8px;
+		}
+
+		::-webkit-scrollbar-track {
+			background: var(--bg-color);
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: var(--border-color);
+			border-radius: 4px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: var(--text-sub);
+		}
+
+		/* ── ZERTER Download Overlay ──────────────────────────── */
+		.video-thumbnail {
+			position: relative;
+			overflow: hidden;
+			border-radius: 10px;
+		}
+
+		.zerter-dl-btn {
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			background: #ff0000;
+			color: #fff;
+			border: none;
+			border-radius: 6px;
+			padding: 5px 11px;
+			font-size: 12px;
+			font-weight: 700;
+			cursor: pointer;
+			opacity: 0;
+			transform: translateY(-4px);
+			transition: opacity .2s, transform .2s;
+			z-index: 10;
+		}
+
+		.video-thumbnail:hover .zerter-dl-btn {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.zerter-dl-btn:hover {
+			background: #cc0000;
+		}
+
+		.zerter-dl-btn.done {
+			background: #23d160;
+			opacity: 1;
+			transform: none;
+			cursor: default;
+		}
+
+		.zerter-dl-btn.loading {
+			background: #555;
+			opacity: 1;
+			transform: none;
+			cursor: default;
+		}
+
+		.zerter-dl-btn.skip {
+			background: #606060;
+			opacity: 1;
+			transform: none;
+			cursor: default;
+		}
+
+		/* ── Custom Context Menu ──────────────────────────────────── */
+		.custom-context-menu {
+			position: absolute;
+			z-index: 10000;
+			background: var(--card-bg);
+			border: 1px solid var(--border-color);
+			border-radius: 8px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+			padding: 6px 0;
+			min-width: 180px;
+			display: none;
+		}
+
+		.custom-context-menu.active {
+			display: block;
+			animation: qmPop 0.15s ease-out;
+		}
+
+		.context-menu-item {
+			padding: 10px 16px;
+			font-size: 13px;
+			font-weight: 500;
+			color: var(--text-main);
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			transition: background 0.1s;
+		}
+
+		.context-menu-item:hover {
+			background: var(--hover-bg);
+		}
+
+		.context-menu-item.danger:hover {
+			background: rgba(255, 0, 0, 0.15);
+			color: #ff4e45;
+		}
+
+		/* ── ZERTER Logo Badge ──────────────────────────────────── */
+		.zerter-badge-logo {
+			font-size: 11px;
+			background: #ff0000;
+			color: #fff;
+			padding: 2px 7px;
+			border-radius: 4px;
+			margin-left: 6px;
+			font-weight: 700;
+			align-self: center;
+			vertical-align: middle;
+		}
+
+		/* ── Spinner ──────────────────────────────────────────── */
+		.zerter-spinner-wrap {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 80px;
+			width: 100%;
+		}
+
+		.zerter-spinner {
+			width: 44px;
+			height: 44px;
+			border: 3px solid #272727;
+			border-top-color: #ff0000;
+			border-radius: 50%;
+			animation: zspin .8s linear infinite;
+		}
+
+		@keyframes zspin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		/* ── Queue FAB ──────────────────────────────────────────── */
+		.zerter-fab {
+			position: relative;
+			background: #ff0000;
+			color: #fff;
+			border: none;
+			border-radius: 50%;
+			width: 36px;
+			height: 36px;
+			font-size: 16px;
+			cursor: pointer;
+			z-index: 2000;
+			transition: transform .2s, opacity .2s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: 12px;
+			flex-shrink: 0;
+		}
+
+		.zerter-fab.hide {
+			opacity: 0;
+			pointer-events: none;
+			transform: scale(0.5);
+		}
+
+		.zerter-fab:hover {
+			transform: scale(1.1);
+		}
+
+		.zerter-fab-badge {
+			position: absolute;
+			top: -4px;
+			right: -4px;
+			min-width: 18px;
+			height: 18px;
+			border-radius: 9px;
+			background: #fff;
+			color: #000;
+			font-size: 11px;
+			font-weight: 700;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			padding: 0 4px;
+		}
+
+		.zerter-fab-badge.show {
+			display: flex;
+		}
+
+		.zerter-drawer {
+			position: fixed;
+			top: 56px;
+			right: 0;
+			width: 380px;
+			max-height: calc(100vh - 56px);
+			background: var(--card-bg);
+			border-radius: 0 0 0 12px;
+			border-top: 2px solid var(--accent-base, #ff0000);
+			z-index: 9998;
+			display: flex;
+			flex-direction: column;
+			transform: translateX(110%);
+			transition: transform .3s ease;
+		}
+
+		.zerter-drawer.open {
+			transform: translateX(0);
+		}
+
+		.zerter-dhead {
+			padding: 12px 16px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid var(--border-color);
+			flex-shrink: 0;
+		}
+
+		.zerter-dhead span {
+			font-size: 14px;
+			font-weight: 700;
+			color: var(--text-main);
+		}
+
+		.zerter-dhead button {
+			background: none;
+			border: none;
+			color: var(--text-sub);
+			font-size: 18px;
+			cursor: pointer;
+			border-radius: 4px;
+			padding: 2px 8px;
+		}
+
+		.zerter-dhead button:hover {
+			background: var(--hover-bg);
+		}
+
+		.zerter-dbody {
+			overflow-y: auto;
+			flex: 1;
+		}
+
+		.zerter-empty {
+			padding: 24px;
+			color: var(--text-sub);
+			text-align: center;
+			font-size: 13px;
+		}
+
+		.zerter-qrow {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 10px 16px;
+			border-bottom: 1px solid var(--border-color);
+		}
+
+		.zerter-qinfo {
+			flex: 1;
+			min-width: 0;
+		}
+
+		.zerter-qtitle {
+			font-size: 13px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: var(--text-main);
+		}
+
+		.zerter-qbar {
+			height: 3px;
+			background: var(--border-color);
+			border-radius: 2px;
+			margin-top: 5px;
+		}
+
+		.zerter-qfill {
+			height: 100%;
+			background: #23d160;
+			border-radius: 2px;
+			transition: width .5s;
+		}
+
+		.zerter-qtag {
+			font-size: 11px;
+			padding: 3px 10px;
+			border-radius: 12px;
+			flex-shrink: 0;
+			font-weight: 500;
+		}
+
+		.zerter-qtag.waiting {
+			background: var(--hover-bg);
+			color: #007bff;
+		}
+
+		.zerter-qtag.downloading {
+			background: var(--hover-bg);
+			color: #23d160;
+		}
+
+		.zerter-qtag.downloaded {
+			background: var(--hover-bg);
+			color: #00b4d8;
+		}
+
+		/* ── Video View (SPA) ────────────────────────────── */
+		.video-overlay {
+			position: fixed;
+			top: 56px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: var(--bg-color);
+			z-index: 50;
+			overflow-y: auto;
+			display: flex;
+			opacity: 1;
+			transition: all 0.3s ease;
+		}
+
+		.video-overlay.mini-player {
+			position: fixed;
+			top: auto;
+			left: 90px;
+			bottom: 90px;
+			right: auto;
+			width: 320px;
+			height: 180px;
+			z-index: 9999;
+			border-radius: 12px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+			overflow: hidden;
+			cursor: pointer;
+			background: transparent;
+			pointer-events: none;
+		}
+
+		.video-overlay.mini-player .vo-content {
+			padding: 0;
+			margin: 0;
+			gap: 0;
+		}
+
+		.video-overlay.mini-player .vo-video-info,
+		.video-overlay.mini-player .vo-side-col {
+			display: none !important;
+		}
+
+		.video-overlay.mini-player .vo-player-wrap {
+			border-radius: 12px;
+			pointer-events: auto;
+		}
+
+		.vo-content {
+			width: 100%;
+			max-width: 1440px;
+			margin: 0 auto;
+			padding: 24px 20px;
+			display: flex;
+			gap: 24px;
+			flex-wrap: wrap;
+		}
+
+		.vo-main-col {
+			flex: 1 1 65%;
+			min-width: 320px;
+		}
+
+		.vo-side-col {
+			flex: 1 1 30%;
+			min-width: 300px;
+		}
+
+		.vo-player-wrap {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 16/9;
+			background: #000;
+			border-radius: 12px;
+			overflow: hidden;
+		}
+
+		.vo-player-wrap iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		.vo-video-info {
+			margin-top: 16px;
+		}
+
+		.vo-title-text {
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 1.4;
+			margin-bottom: 12px;
+			color: var(--text-main);
+		}
+
+		.vo-meta-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 12px;
+		}
+
+		.vo-channel-info {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+
+		.vo-ch-avatar {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: var(--hover-bg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 18px;
+			font-weight: 700;
+			color: var(--text-sub);
+			flex-shrink: 0;
+		}
+
+		.vo-ch-name {
+			font-size: 15px;
+			color: var(--text-main);
+			font-weight: 500;
+		}
+
+		.vo-ch-dur {
+			font-size: 12px;
+			color: var(--text-sub);
+			margin-top: 2px;
+		}
+
+		.vo-action-row {
+			display: flex;
+			gap: 10px;
+			flex-wrap: wrap;
+			margin-top: 16px;
+			background: var(--card-bg);
+			padding: 12px 16px;
+			border-radius: 12px;
+			border: 1px solid var(--border-color);
+		}
+
+		.vo-dl-btn {
+			background: #ff0000;
+			color: #fff;
+			border: none;
+			border-radius: 18px;
+			padding: 10px 24px;
+			font-size: 14px;
+			font-weight: 700;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			transition: opacity .2s;
+		}
+
+		.vo-dl-btn.zerter-dl-btn {
+			position: static;
+			opacity: 1;
+			transform: none;
+		}
+
+		.vo-dl-btn:hover {
+			opacity: .88;
+		}
+
+		.vo-open-btn {
+			background: var(--hover-bg);
+			color: var(--text-main);
+			border: none;
+			border-radius: 18px;
+			padding: 10px 20px;
+			font-size: 14px;
+			font-weight: 500;
+			cursor: pointer;
+			transition: background .15s;
+		}
+
+		.vo-open-btn:hover {
+			background: var(--border-color);
+		}
+
+		.vo-desc {
+			margin-top: 16px;
+			background: var(--card-bg);
+			border: 1px solid var(--border-color);
+			padding: 16px;
+			border-radius: 12px;
+			font-size: 14px;
+			color: var(--text-sub);
+			line-height: 1.5;
+		}
+
+		.vo-related-title {
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 16px;
+			color: var(--text-main);
+		}
+
+		.vo-rv-card {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 12px;
+			cursor: pointer;
+			border-radius: 8px;
+			padding: 4px;
+		}
+
+		.vo-rv-card:hover {
+			background: var(--hover-bg);
+		}
+
+		.vo-rv-thumb {
+			width: 160px;
+			aspect-ratio: 16/9;
+			border-radius: 8px;
+			object-fit: cover;
+			background: var(--hover-bg);
+			flex-shrink: 0;
+		}
+
+		.vo-rv-info {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			overflow: hidden;
+		}
+
+		.vo-rv-title {
+			font-size: 14px;
+			font-weight: 500;
+			color: var(--text-main);
+			line-height: 1.4;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+
+		.vo-rv-ch {
+			font-size: 12px;
+			color: var(--text-sub);
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--== HEADER ==-->
+	<header class="header-container stick">
+		<div class="container">
+			<div class="guide-button-box" onclick="toggleSidebar()">
+				<span class="iconify hamburger" data-icon="ci:hamburger" data-inline="false"></span>
+			</div>
+			<div class="logo" style="display:flex;align-items:center">
+				<img class="logo-img" src="Resources/youtube_logo.webp" alt="YouTube" style="height:42px">
+			</div>
+		</div>
+		<div class="search-container">
+			<input type="text" id="searchInput" placeholder="Ara..." autocomplete="off"
+				onkeydown="if(event.key==='Enter')doSearch()">
+			<button type="button" onclick="doSearch()">
+				<span class="iconify search-btn" data-icon="ant-design:search-outlined" data-inline="false"></span>
+			</button>
+		</div>
+		<button onclick="toggleDarkMode()" title="Koyu/Açık Mod"
+			style="background:transparent; border:1px solid var(--border-color); color:var(--text-main); font-size:18px; width:36px; height:36px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; margin-right:8px;">🌗</button>
+		<button class="zerter-fab" onclick="toggleQueue()" title="İndirme Kuyruğu" style="margin-right:16px;">
+			⬇<span class="zerter-fab-badge" id="qBadge">0</span>
+		</button>
+	</header>
+
+	<!--== SIDEBAR ==-->
+	<div class="sidebar">
+		<div class="sidebar-categories">
+			<div class="sidebar-category selected"
+				onclick="loadHome();setActive(this);document.getElementById('searchInput').focus()">
+				<span class="iconify user-icon" data-icon="fluent:compass-24-filled" data-inline="false"></span>
+				<span>Keşfet</span>
+			</div>
+			<div class="sidebar-category" onclick="loadLibrary();setActive(this)">
+				<span class="iconify" data-icon="fluent:library-24-regular" data-inline="false"
+					style="font-size:24px;margin-right:12px;"></span>
+				<span>Kitaplık</span>
+			</div>
+		</div>
+		<hr />
+		<div class="sidebar-bottom-info">
+			<span style="color:#606060;font-size:12px">© 2025 ZERTER by GROXBE</span>
+		</div>
+		<!-- Mini sidebar -->
+		<div class="sidebar-category-sml" onclick="loadHome()">
+			<span class="iconify user-icon selected-img" data-icon="fluent:compass-24-filled"
+				data-inline="false"></span>
+			<span>Keşfet</span>
+		</div>
+		<div class="sidebar-category-sml" onclick="loadLibrary()">
+			<span class="iconify user-icon" data-icon="fluent:library-24-regular" data-inline="false"></span>
+			<span>Kitaplık</span>
+		</div>
+	</div>
+
+	<!--== AUDIO PLAYER (Library) ==-->
+	<div class="audio-player" id="audioPlayer" style="display:none;">
+		<div class="ap-info">
+			<span class="iconify ap-icon" data-icon="fluent:music-note-2-24-filled" data-inline="false"></span>
+			<div class="ap-details">
+				<div class="ap-title" id="apTitle">Seçili Parça Yok</div>
+				<div class="ap-artist">ZERTER Kütüphane</div>
+			</div>
+		</div>
+		<div class="ap-controls">
+			<button class="ap-btn" onclick="skipAudio(-10)" title="10 Saniye Geri">⏪︎</button>
+			<button class="ap-btn ap-play-btn" id="playPauseBtn" onclick="togglePlayPause()">⏸</button>
+			<button class="ap-btn" onclick="skipAudio(10)" title="10 Saniye İleri">⏩︎</button>
+
+			<div class="ap-progress-container">
+				<span id="currentTime">0:00</span>
+				<input type="range" id="seekSlider" class="ap-slider" value="0" min="0" max="100" step="1"
+					oninput="seekAudio()">
+				<span id="totalTime">0:00</span>
+			</div>
+
+			<div class="ap-volume-container">
+				<span class="iconify" data-icon="fluent:speaker-2-24-filled"></span>
+				<input type="range" id="volSlider" class="ap-vol-slider" value="100" min="0" max="100" step="1">
+			</div>
+
+			<audio id="htmlAudio" style="display:none;"></audio>
+		</div>
+		<button class="ap-close" onclick="closePlayer()">✕</button>
+	</div>
+
+	<!--== VIDEO PLAYER (Library) ==-->
+	<div class="video-player-modal" id="videoPlayerModal"
+		style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.9); z-index:10000; flex-direction:column; align-items:center; justify-content:center;">
+		<div style="width:100%; max-width:1000px; position:relative; display:flex; flex-direction:column; gap:10px;">
+			<div
+				style="display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background:rgba(20,20,20,0.8); border-radius:8px;">
+				<div style="display:flex; flex-direction:column;">
+					<span id="vpTitle" style="color:#fff; font-size:16px; font-weight:600;">Seçili Video Yok</span>
+					<span style="color:#aaa; font-size:12px;">ZERTER Video Kütüphanesi</span>
+				</div>
+				<button onclick="closeVideoPlayer()"
+					style="background:var(--hover-color); color:#fff; border:none; padding:8px 15px; border-radius:4px; cursor:pointer;">Kapat
+					✕</button>
+			</div>
+			<video id="htmlVideo" controls
+				style="width:100%; border-radius:8px; background:#000; max-height:75vh; outline:none; box-shadow:0 10px 40px rgba(0,0,0,0.8);"></video>
+		</div>
+	</div>
+
+	<!--== VIDEO VIEW (SPA Overlay) ==-->
+	<div id="videoView" class="video-overlay" style="display:none;">
+		<button class="back-btn" id="voBackBtn" onclick="toggleMiniPlayer(event)" title="Geri (Mini Player)"
+			style="position:absolute; top:20px; left:20px; z-index:100; background:rgba(0,0,0,0.5); color:#fff; border:none; padding:10px; border-radius:50%; font-size:20px; cursor:pointer; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">
+			<span class="iconify" data-icon="akar-icons:arrow-left" data-inline="false"></span>
+		</button>
+		<div class="vo-content">
+			<div class="vo-main-col">
+				<div class="vo-player-wrap" onclick="restoreMiniPlayer(event)">
+					<iframe id="voIframe" src="" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+				</div>
+				<div class="vo-video-info">
+					<div class="vo-title-text" id="voTitle">Yükleniyor...</div>
+					<div class="vo-meta-row">
+						<div class="vo-channel-info">
+							<div class="vo-ch-avatar" id="voChInitial">?</div>
+							<div>
+								<div class="vo-ch-name" id="voChName">...</div>
+								<div class="vo-ch-dur" id="voDur">...</div>
+							</div>
+						</div>
+					</div>
+					<div class="vo-action-row">
+						<!-- The all-important download button with native context menu bindings -->
+						<button class="vo-dl-btn zerter-dl-btn" id="voDlBtn"
+							onclick="if(window.currentVideoUrl) openQualityModal(jsesc(window.currentVideoUrl), jsesc(window.currentVideoId), jsesc(window.currentVideoTitle)); event.stopPropagation();"
+							oncontextmenu="if(window.currentVideoUrl) showContextMenu(event, 'video', jsesc(window.currentVideoId), jsesc(window.currentVideoUrl), jsesc(window.currentVideoTitle)); event.stopPropagation();">
+							⬇ İNDİR
+						</button>
+						<button class="vo-open-btn" id="voOpenBtn"
+							onclick="if(window.currentVideoUrl) window.open(window.currentVideoUrl, '_blank')">
+							▶ YouTube'da Aç
+						</button>
+					</div>
+					<div class="vo-desc">
+						<b>ZERTER Local Player</b><br><br>
+						Bu video doğrudan orijinal YouTube sunucularından oynatılmaktadır.<br>
+						İndirmek için "İNDİR" butonuna tıklayın ve indirilenler sekmesinden takip edin.
+					</div>
+				</div>
+			</div>
+			<div class="vo-side-col">
+				<div class="vo-related-title">Sıradaki Videolar</div>
+				<div id="voRelatedList" style="display:flex; flex-direction:column; gap:12px;"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--== MAIN CONTENT ==-->
+	<div class="main-content">
+		<div class="videos">
+			<div class="videos-container" id="videosContainer">
+				<div class="zerter-spinner-wrap">
+					<div class="zerter-spinner"></div>
+				</div>
+			</div>
+			<div id="loadMoreSpinner" style="display:none; text-align:center; padding:20px;">
+				<div class="zerter-spinner" style="margin:0 auto;"></div>
+			</div>
+			<div id="loadMoreSentinel" style="height:20px;"></div>
+		</div>
+	</div>
+
+	<!-- Format Modal -->
+	<div class="quality-modal" id="qualityModal" style="display:none;">
+		<div class="qm-content">
+			<div class="qm-header">
+				<h3>İndirme Seçeneği</h3>
+				<span id="qmTitle"
+					style="font-size:12px; color:var(--text-sec); display:block; margin-top:5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"></span>
+			</div>
+			<div class="qm-body" id="qmBody">
+				<div style="text-align:center; padding:30px;">
+					<div class="zerter-spinner" style="margin:0 auto"></div>
+				</div>
+			</div>
+			<div class="qm-footer">
+				<button onclick="document.getElementById('qualityModal').style.display='none'">İptal</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Queue FAB is now in the header -->
+
+	<!-- Queue Drawer -->
+	<div class="zerter-drawer" id="queueDrawer">
+		<div class="zerter-dhead">
+			<span>⬇ İndirme Kuyruğu</span>
+			<button onclick="toggleQueue()">✕</button>
+		</div>
+		<div class="zerter-dbody" id="queueBody"></div>
+	</div>
+
+	<!-- Custom Context Menu -->
+	<div id="customContextMenu" class="custom-context-menu"></div>
+
+	<script>
+		// ── State ──────────────
+		let queueOpen = false;
+		const videoData = {};
+
+		let currentMode = 'home'; // 'home', 'search', 'library'
+		let currentLibraryTab = 'audio'; // 'audio', 'video'
+		let currentLibraryItems = [];
+		let currentQuery = '';
+		let skipCount = 0;
+		let isLoadingMore = false;
+		let hasMoreToLoad = true;
+
+		// ── Chip / Sidebar active ──────────────
+		function activateChip(el) {
+			document.querySelectorAll('.navbar-element').forEach(b => b.classList.remove('active'));
+			el.classList.add('active');
+		}
+		function setActive(el) {
+			document.querySelectorAll('.sidebar-category').forEach(el => el.classList.remove('selected'));
+			el.classList.add('selected');
+		}
+		function searchAndActivate(q) {
+			document.getElementById('searchInput').value = q;
+			doSearch();
+		}
+
+		// ── Search / Home / Library ──────────────
+		function doSearch() {
+			const q = document.getElementById('searchInput').value.trim();
+			if (!q) return;
+
+			if (currentMode === 'library') {
+				const filtered = currentLibraryItems.filter(item => {
+					return (item.title || '').toLowerCase().includes(q.toLowerCase());
+				});
+				currentLibraryItems = filtered.length ? filtered : currentLibraryItems;
+				renderLibrary();
+				if (!filtered.length) {
+					// Reload all if nothing found
+					loadLibrary();
+				}
+				return;
+			}
+
+			currentMode = 'search';
+			currentQuery = q;
+			skipCount = 0;
+			hasMoreToLoad = true;
+			showSpinner();
+			fetch('/api/search?q=' + encodeURIComponent(q))
+				.then(r => r.json()).then(v => renderVideos(v, false)).catch(showError);
+		}
+		function loadHome() {
+			currentMode = 'home';
+			closeMiniPlayerFully();
+			skipCount = 0;
+			hasMoreToLoad = true;
+			document.getElementById('searchInput').value = '';
+			document.getElementById('searchInput').placeholder = 'Ara...';
+			showSpinner();
+			fetch('/api/home').then(r => r.json()).then(v => renderVideos(v, false)).catch(showError);
+		}
+		function loadLibrary() {
+			currentMode = 'library';
+			closeMiniPlayerFully();
+			document.getElementById('searchInput').value = '';
+			document.getElementById('searchInput').placeholder = 'Kütüphanede ara...';
+			showSpinner();
+			fetch('/api/library').then(r => r.json()).then(data => {
+				currentLibraryItems = data;
+				renderLibrary();
+			}).catch(showError);
+		}
+
+		function showSpinner() {
+			document.getElementById('videosContainer').innerHTML =
+				'<div class="zerter-spinner-wrap"><div class="zerter-spinner"></div></div>';
+		}
+		function showError() {
+			document.getElementById('videosContainer').innerHTML =
+				'<p style="padding:60px 40px;color:#aaa;font-size:15px">⚠️ ZERTER sunucusuna bağlanılamadı.<br><small style="color:#606060">Birkaç saniye bekleyip sayfayı yenileyin.</small></p>';
+		}
+
+		// ── Render ──────────────────────────────
+		function esc(s) {
+			return String(s || '').replace(/[&<>"']/g,
+				c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+		}
+		function jsesc(s) {
+			return encodeURIComponent(s || '').replace(/'/g, "%27");
+		}
+
+		window.currentVideoId = null;
+		window.currentVideoUrl = null;
+		window.currentVideoTitle = null;
+
+		function openVideoPage(idEncoded) {
+			const id = decodeURIComponent(idEncoded || '');
+			const v = videoData[id];
+			if (!v) return;
+
+			// Close existing PIP/mini-player first
+			const vv = document.getElementById('videoView');
+			if (vv.classList.contains('mini-player')) {
+				vv.classList.remove('mini-player');
+			}
+
+			window.currentVideoId = v.id;
+			window.currentVideoUrl = v.url || `https://www.youtube.com/watch?v=${v.id}`;
+			window.currentVideoTitle = v.title;
+
+			document.getElementById('voTitle').textContent = v.title;
+			document.getElementById('voChName').textContent = v.channel || '';
+			document.getElementById('voDur').textContent = v.duration || '';
+			document.getElementById('voChInitial').textContent = v.channel ? v.channel.charAt(0).toUpperCase() : '?';
+
+			// Reset download button for this video
+			const oldBtn = document.querySelector('[id^="dl-"]');
+			// Recreate voDlBtn cleanly
+			const dlContainer = document.querySelector('.vo-action-row');
+			const existingVoDl = dlContainer.querySelector('.vo-dl-btn');
+			if (existingVoDl) {
+				const newBtn = existingVoDl.cloneNode(false);
+				newBtn.id = 'dl-' + v.id;
+				newBtn.className = 'vo-dl-btn zerter-dl-btn';
+				newBtn.textContent = '⬇ İNDİR';
+				newBtn.setAttribute('data-title', v.title);
+				newBtn.onclick = function (e) { if (window.currentVideoUrl) openQualityModal(jsesc(window.currentVideoUrl), jsesc(window.currentVideoId), jsesc(window.currentVideoTitle)); e.stopPropagation(); };
+				newBtn.oncontextmenu = function (e) { if (window.currentVideoUrl) showContextMenu(e, 'video', jsesc(window.currentVideoId), jsesc(window.currentVideoUrl), jsesc(window.currentVideoTitle)); e.stopPropagation(); };
+				existingVoDl.replaceWith(newBtn);
+			}
+
+			vv.style.display = 'flex';
+			vv.classList.remove('mini-player');
+			document.getElementById('voBackBtn').style.display = 'block';
+
+			setTimeout(() => {
+				document.getElementById('voIframe').src = `https://www.youtube.com/embed/${v.id}?autoplay=1&rel=0&enablejsapi=1`;
+			}, 50);
+
+			document.querySelector('.main-content').style.display = 'none';
+
+			document.getElementById('voRelatedList').innerHTML = '<div style="color:var(--text-sub)">Sıradaki videolar yükleniyor...</div>';
+			fetch(`/api/related?id=${v.id}`)
+				.then(r => r.json())
+				.then(items => {
+					let html = items.map(r => `
+						<div class="vo-rv-card" onclick="openVideoPage('${jsesc(r.id)}')">
+							<img class="vo-rv-thumb" src="${r.thumb}" loading="lazy"/>
+							<div class="vo-rv-info">
+								<div class="vo-rv-title">${esc(r.title)}</div>
+								<div class="vo-rv-ch">${esc(r.channel)}</div>
+							</div>
+						</div>
+					`).join('');
+					document.getElementById('voRelatedList').innerHTML = html;
+					items.forEach(r => videoData[r.id] = r);
+				}).catch(() => document.getElementById('voRelatedList').innerHTML = '');
+
+			window.scrollTo(0, 0);
+			vv.scrollTo(0, 0);
+		}
+
+		function toggleMiniPlayer(e) {
+			if (e) e.stopPropagation();
+			const vv = document.getElementById('videoView');
+			if (vv.style.display === 'none') return;
+
+			vv.classList.add('mini-player');
+			document.getElementById('voBackBtn').style.display = 'none';
+			document.querySelector('.main-content').style.display = 'block';
+		}
+
+		function restoreMiniPlayer(e) {
+			const vv = document.getElementById('videoView');
+			if (!vv.classList.contains('mini-player')) return;
+
+			if (e) e.stopPropagation();
+			vv.classList.remove('mini-player');
+			document.getElementById('voBackBtn').style.display = 'block';
+			document.querySelector('.main-content').style.display = 'none';
+		}
+
+		function closeMiniPlayerFully() {
+			const vv = document.getElementById('videoView');
+			if (!vv || vv.style.display === 'none') return;
+			const ifr = document.getElementById('voIframe');
+			if (ifr) { try { ifr.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*'); } catch (e) { } ifr.src = ''; }
+			vv.style.display = 'none';
+			vv.classList.remove('mini-player');
+			document.querySelector('.main-content').style.display = 'block';
+		}
+
+		/* ── Dark / Light Mode Toggle ────────────────────────────── */
+		function toggleDarkMode() {
+			const isDark = document.documentElement.classList.toggle('light-mode');
+			localStorage.setItem('zerterLightMode', isDark ? '1' : '0');
+		}
+
+		window.addEventListener('DOMContentLoaded', () => {
+			if (localStorage.getItem('zerterLightMode') === '1') {
+				document.documentElement.classList.add('light-mode');
+			}
+		});
+
+		function renderVideos(vids, isAppend) {
+			if (!isAppend) {
+				if (!vids || !vids.length) {
+					document.getElementById('videosContainer').innerHTML =
+						'<p style="padding:60px;color:#aaa">Sonuç bulunamadı.</p>';
+					return;
+				}
+				document.getElementById('videosContainer').classList.remove('library-list');
+				document.getElementById('videosContainer').innerHTML = '';
+			}
+			if (!vids || !vids.length) return;
+
+			const html = vids.map(v => {
+				videoData[v.id] = v;
+				const chInitial = v.channel ? v.channel.charAt(0).toUpperCase() : '?';
+				return `<div class="video" onclick="openVideoPage('${jsesc(v.id)}')" oncontextmenu="showContextMenu(event, 'video', '${jsesc(v.id)}', '${jsesc(v.url)}', '${jsesc(v.title)}')" style="cursor:pointer">
+      <div class="video-thumbnail">
+        <img src="${esc(v.thumb)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+        <span style="position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.8);color:#fff;font-size:11px;padding:2px 6px;border-radius:3px;font-weight:600;">${esc(v.duration || '')}</span>
+        <button class="zerter-dl-btn" id="dl-${esc(v.id)}" data-title="${esc(v.title)}"
+          onclick="event.stopPropagation();openQualityModal('${jsesc(v.url)}','${jsesc(v.id)}','${jsesc(v.title)}')">⬇ İNDİR</button>
+      </div>
+      <div class="video-details">
+        <div class="author">
+          <div style="width:36px;height:36px;border-radius:50%;background:#cc0000;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;flex-shrink:0;">${chInitial}</div>
+        </div>
+        <div class="title">
+          <h3>${esc(v.title)}</h3>
+          <a href="#" onclick="return false">${esc(v.channel)}</a>
+          <span>${esc(v.duration)}</span>
+        </div>
+      </div>
+    </div>`;
+			}).join('');
+
+			document.getElementById('videosContainer').insertAdjacentHTML('beforeend', html);
+			if (isAppend) checkBackgroundStatuses();
+		}
+
+		function loadMore() {
+			if (isLoadingMore || !hasMoreToLoad || currentMode === 'library') return;
+			isLoadingMore = true;
+			skipCount += 24;
+			document.getElementById('loadMoreSpinner').style.display = 'block';
+
+			let url = currentMode === 'search'
+				? `/api/search?q=${encodeURIComponent(currentQuery)}&skip=${skipCount}`
+				: `/api/home?skip=${skipCount}`;
+
+			fetch(url).then(r => r.json()).then(vids => {
+				isLoadingMore = false;
+				document.getElementById('loadMoreSpinner').style.display = 'none';
+				if (!vids || vids.length === 0) {
+					hasMoreToLoad = false;
+					return;
+				}
+				renderVideos(vids, true);
+			}).catch(() => {
+				isLoadingMore = false;
+				document.getElementById('loadMoreSpinner').style.display = 'none';
+			});
+		}
+
+		// ── Media Library Players ──────────────
+		function playLocal(url, title, isVideo) {
+			// Close PIP mini player if active
+			const vv = document.getElementById('videoView');
+			if (vv && vv.style.display !== 'none') {
+				const ifr = document.getElementById('voIframe');
+				if (ifr) { try { ifr.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*'); } catch (e) { } }
+				ifr.src = '';
+				vv.style.display = 'none';
+				vv.classList.remove('mini-player');
+				document.querySelector('.main-content').style.display = 'block';
+			}
+
+			if (isVideo) {
+				closePlayer();
+				const player = document.getElementById('videoPlayerModal');
+				const video = document.getElementById('htmlVideo');
+				document.getElementById('vpTitle').textContent = decodeURIComponent(title || '');
+				video.src = decodeURIComponent(url || '');
+				player.style.display = 'flex';
+				video.play().catch(e => console.log('Video play blocked:', e));
+			} else {
+				closeVideoPlayer();
+				const player = document.getElementById('audioPlayer');
+				const audio = document.getElementById('htmlAudio');
+				document.getElementById('apTitle').textContent = decodeURIComponent(title || '');
+				audio.src = decodeURIComponent(url || '');
+				player.style.display = 'flex';
+				audio.play().catch(e => console.log('Audio play blocked:', e));
+				document.getElementById('playPauseBtn').textContent = '⏸';
+			}
+		}
+		function closePlayer() {
+			const player = document.getElementById('audioPlayer');
+			const audio = document.getElementById('htmlAudio');
+			audio.pause();
+			audio.src = '';
+			player.style.display = 'none';
+		}
+		function closeVideoPlayer() {
+			const player = document.getElementById('videoPlayerModal');
+			const video = document.getElementById('htmlVideo');
+			video.pause();
+			video.src = '';
+			player.style.display = 'none';
+		}
+		function skipAudio(seconds) {
+			const audio = document.getElementById('htmlAudio');
+			audio.currentTime += seconds;
+		}
+		function togglePlayPause() {
+			const audio = document.getElementById('htmlAudio');
+			const btn = document.getElementById('playPauseBtn');
+			if (audio.paused) {
+				audio.play();
+				btn.textContent = '⏸';
+			} else {
+				audio.pause();
+				btn.textContent = '▶';
+			}
+		}
+		function seekAudio() {
+			const audio = document.getElementById('htmlAudio');
+			const slider = document.getElementById('seekSlider');
+			if (audio.duration) {
+				audio.currentTime = audio.duration * (slider.value / 100);
+			}
+		}
+		function formatTime(seconds) {
+			if (isNaN(seconds)) return '0:00';
+			const m = Math.floor(seconds / 60);
+			const s = Math.floor(seconds % 60);
+			return `${m}:${s < 10 ? '0' : ''}${s}`;
+		}
+
+		function switchLibraryTab(tab) {
+			currentLibraryTab = tab;
+			renderLibrary();
+		}
+
+		function renderLibrary() {
+			if (!currentLibraryItems || !currentLibraryItems.length) {
+				document.getElementById('videosContainer').innerHTML =
+					'<p style="padding:60px;color:#aaa">Kütüphane boş. Henüz hiçbir şey indirmediniz.</p>';
+				return;
+			}
+			document.getElementById('videosContainer').classList.add('library-list');
+
+			// Tab UI
+			let tabsHtml = `
+				<div style="display:flex; gap:10px; margin-bottom:20px; border-bottom:1px solid var(--border-color); padding-bottom:10px; width:100%;">
+					<button onclick="switchLibraryTab('audio')" style="background:transparent; border:none; color: ${currentLibraryTab === 'audio' ? 'var(--text-main)' : 'var(--text-sec)'}; font-size:16px; font-weight:${currentLibraryTab === 'audio' ? 'bold' : 'normal'}; border-bottom:${currentLibraryTab === 'audio' ? '2px solid var(--text-main)' : 'none'}; cursor:pointer; padding-bottom:5px;">Şarkılar</button>
+					<button onclick="switchLibraryTab('video')" style="background:transparent; border:none; color: ${currentLibraryTab === 'video' ? 'var(--text-main)' : 'var(--text-sec)'}; font-size:16px; font-weight:${currentLibraryTab === 'video' ? 'bold' : 'normal'}; border-bottom:${currentLibraryTab === 'video' ? '2px solid var(--text-main)' : 'none'}; cursor:pointer; padding-bottom:5px;">Videolar</button>
+				</div>
+			`;
+
+			// Filter items
+			let filtered = currentLibraryItems.filter(v => {
+				const ext = (v.filename || '').toLowerCase();
+				if (currentLibraryTab === 'audio') return ext.endsWith('.mp3') || ext.endsWith('.flac');
+				return ext.endsWith('.mp4') || ext.endsWith('.mkv') || ext.endsWith('.webm');
+			});
+
+			if (filtered.length === 0) {
+				document.getElementById('videosContainer').innerHTML = tabsHtml + '<p style="padding:60px;color:#aaa">Bu kategoride sonuç bulunamadı.</p>';
+				return;
+			}
+
+			let listHtml = filtered.map(v => {
+				const isAudio = currentLibraryTab === 'audio';
+				const icon = isAudio ? 'fluent:music-note-2-24-filled' : 'fluent:video-24-filled';
+
+				return `<div class="video library-list-item" onclick="playLocal('/api/stream?file=${jsesc(v.filename)}', '${jsesc(v.title)}', ${!isAudio})" oncontextmenu="showContextMenu(event, 'library', '${jsesc(v.filename)}', '', '${jsesc(v.title)}')" style="cursor:pointer; display:flex; flex-direction:row; align-items:center; width:100%; background:var(--bg-color); border-bottom:1px solid var(--border-color); padding:10px; margin-bottom:0px; max-width:100%;">
+      <div class="video-thumbnail" style="width:60px; height:60px; min-height:60px; background:#1e1e1e; display:flex; align-items:center; justify-content:center; border-radius:4px; margin-right:15px; flex-shrink:0;">
+        <span class="iconify" data-icon="${icon}" style="color:#ff0000; font-size:32px;"></span>
+      </div>
+      <div class="video-details" style="display:flex; flex-direction:column; justify-content:center; margin-top:0;">
+        <div class="title">
+          <h3 style="margin:0 0 5px 0; font-size:16px;">${esc(v.title)}</h3>
+          <span style="color:var(--text-sec); font-size:13px;">ZERTER ${isAudio ? 'Ses' : 'Video'} Kütüphanesi</span>
+        </div>
+      </div>
+    </div>`;
+			}).join('');
+
+			document.getElementById('videosContainer').innerHTML = tabsHtml + listHtml;
+		}
+
+		// ── Format Modal & Download ──────────────────────────────
+		function openQualityModal(urlEncoded, idEncoded, titleEncoded) {
+			const id = decodeURIComponent(idEncoded || '');
+			const url = decodeURIComponent(urlEncoded || '');
+			const title = decodeURIComponent(titleEncoded || '');
+
+			const btn = document.getElementById('dl-' + id);
+			if (!btn || btn.classList.contains('loading') || btn.classList.contains('done') || btn.classList.contains('skip')) return;
+
+			const modal = document.getElementById('qualityModal');
+			document.getElementById('qmTitle').textContent = title;
+			document.getElementById('qmBody').innerHTML = '<div style="text-align:center; padding:30px;"><div class="zerter-spinner" style="margin:0 auto"></div></div>';
+			modal.style.display = 'flex';
+
+			Promise.all([
+				fetch('/api/qualities?url=' + encodeURIComponent(url)).then(r => r.json()),
+				fetch('/api/library-check?title=' + encodeURIComponent(title)).then(r => r.json()).catch(() => ({ hasAudio: false, hasVideo: false }))
+			]).then(([data, lib]) => {
+				let audioSection = lib.hasAudio
+					? '<div style="padding:12px; background:rgba(0,200,0,0.1); border-radius:8px; color:#4caf50; text-align:center; font-weight:600;">✓ Ses olarak kütüphanede mevcut</div>'
+					: `<div class="qm-grid">${data.audio.map(a => `<button class="qm-btn" onclick="startDownload('${jsesc(url)}', '${jsesc(id)}', '${a === 'FLAC' ? 'flac' : 'mp3'}', '${a}')">${a === 'FLAC' ? 'FLAC' : 'MP3 (' + a + ')'}</button>`).join('')}</div>`;
+				let videoSection = lib.hasVideo
+					? '<div style="padding:12px; background:rgba(0,200,0,0.1); border-radius:8px; color:#4caf50; text-align:center; font-weight:600;">✓ Video olarak kütüphanede mevcut</div>'
+					: `<div class="qm-grid">${data.video.map(v => `<button class="qm-btn" onclick="startDownload('${jsesc(url)}', '${jsesc(id)}', 'mp4', '${v}')">${v}</button>`).join('')}</div>`;
+				let html = `
+					<div class="qm-section">
+						<h4 style="margin-bottom:10px; color:var(--text-main); border-bottom:1px solid var(--border-color); padding-bottom:5px;">SES (AUDIO)</h4>
+						${audioSection}
+					</div>
+					<div class="qm-section" style="margin-top:20px;">
+						<h4 style="margin-bottom:10px; color:var(--text-main); border-bottom:1px solid var(--border-color); padding-bottom:5px;">VİDEO (MP4)</h4>
+						${videoSection}
+					</div>
+				`;
+				document.getElementById('qmBody').innerHTML = html;
+			}).catch(() => {
+				document.getElementById('qmBody').innerHTML = '<p style="color:#ff0000; text-align:center;">Kalite bilgileri alınamadı!</p>';
+			});
+		}
+
+		function startDownload(urlEncoded, idEncoded, format, quality) {
+			const url = decodeURIComponent(urlEncoded || '');
+			const id = decodeURIComponent(idEncoded || '');
+			document.getElementById('qualityModal').style.display = 'none';
+			const btn = document.getElementById('dl-' + id);
+			if (!btn) return;
+
+			btn.classList.add('loading'); btn.textContent = '⏳';
+			fetch(`/api/download?url=${encodeURIComponent(url)}&format=${format}&quality=${encodeURIComponent(quality)}`)
+				.then(r => r.json())
+				.then(d => {
+					btn.classList.remove('loading');
+					if (d.skipped) {
+						btn.classList.add('skip'); btn.textContent = '✓ Mevcut';
+					} else if (d.ok) {
+						btn.classList.add('done'); btn.textContent = '✓ Listeye Eklendi';
+						refreshQueue();
+					} else {
+						btn.textContent = '⬇ İNDİR';
+					}
+				})
+				.catch(() => { btn.classList.remove('loading'); btn.textContent = '⬇ İNDİR'; });
+		}
+
+		// ── Queue ──────────────────────────────
+		function toggleQueue() {
+			queueOpen = !queueOpen;
+			document.getElementById('queueDrawer').classList.toggle('open', queueOpen);
+			document.querySelector('.zerter-fab').classList.toggle('hide', queueOpen);
+			if (queueOpen) refreshQueue();
+		}
+		function tagLabel(t) {
+			return t === 'downloading' ? 'İndiriliyor' : t === 'waiting' ? 'Listeye Eklendi' : 'Tamamlandı';
+		}
+		function refreshQueue(prefetchedItems) {
+			if (prefetchedItems) { renderQueue(prefetchedItems); return; }
+			fetch('/api/queue').then(r => r.json()).then(renderQueue).catch(() => { });
+		}
+
+		function renderQueue(items) {
+			const body = document.getElementById('queueBody');
+			let visibleItems = items.filter(i => i.tag !== 'downloaded' && i.tag !== 'history');
+			if (!visibleItems.length) {
+				body.innerHTML = '<div class="zerter-empty">Kuyruk boş 🎵<br><small>İndirmek istediğin videoya ⬇ İndir de!</small></div>';
+				return;
+			}
+			body.innerHTML = visibleItems.map(i => `
+			<div class="zerter-qrow">
+				<div class="zerter-qinfo">
+					<div class="zerter-qtitle">${esc(i.Title || i.title || '?')}</div>
+					<div class="zerter-qbar"><div class="zerter-qfill" style="width:${Math.round(i.Progress || 0)}%"></div></div>
+				</div>
+				<span class="zerter-qtag ${i.tag}">${tagLabel(i.tag)}</span>
+			</div>`).join('');
+		}
+
+		// Keep button statuses up to date globally
+		function checkBackgroundStatuses() {
+			fetch('/api/queue').then(r => r.json()).then(items => {
+				const activeCount = items.filter(i => i.tag !== 'downloaded' && i.tag !== 'history').length;
+				const badge = document.getElementById('qBadge');
+				badge.textContent = activeCount;
+				badge.classList.toggle('show', activeCount > 0);
+
+				if (queueOpen) refreshQueue(items);
+
+				// Helper to scrub text for comparison
+				const clean = (text) => (text || '').toLowerCase().replace(/[^a-z0-9\s]/g, '');
+
+				document.querySelectorAll('.zerter-dl-btn').forEach(btn => {
+					let id = btn.id.replace('dl-', '');
+					let btnTitle = clean(btn.dataset.title || '');
+					let urlMatch = `https://www.youtube.com/watch?v=${id}`;
+
+					let matchedItem = items.find(i => {
+						if ((i.url || i.Url) === urlMatch) return true;
+						if (btnTitle.length > 3 && i.Title) {
+							let itemTitle = clean(i.Title);
+							if (itemTitle.includes(btnTitle) || btnTitle.includes(itemTitle)) return true;
+						}
+						return false;
+					});
+
+					if (matchedItem) {
+						if (matchedItem.tag === 'downloading') {
+							btn.textContent = '⏳ İndiriliyor %' + Math.round(matchedItem.Progress || 0);
+							btn.className = 'zerter-dl-btn loading';
+						} else if (matchedItem.tag === 'waiting') {
+							btn.textContent = '✓ Listeye Eklendi';
+							btn.className = 'zerter-dl-btn done';
+						} else if (matchedItem.tag === 'downloaded' || matchedItem.tag === 'history') {
+							// Determine format from file extension
+							let fp = matchedItem.FilePath || '';
+							let formatLabel = '✓ Mevcut';
+							if (fp.endsWith('.mp3') || fp.endsWith('.flac')) formatLabel = '✓ MP3 indirildi';
+							else if (fp.endsWith('.mp4')) formatLabel = '✓ MP4 indirildi';
+							btn.textContent = formatLabel;
+							btn.className = 'zerter-dl-btn done';
+							// Keep clickable — clicking opens quality modal for other format
+							btn.style.pointerEvents = 'auto';
+							btn.style.cursor = 'pointer';
+							btn.style.opacity = '0.85';
+						}
+					}
+				});
+			}).catch(() => { });
+		}
+
+		// ── Context Menu Logic ────────────
+		function showContextMenu(e, type, idEncoded, urlEncoded, titleEncoded) {
+			e.preventDefault();
+			const id = decodeURIComponent(idEncoded || '');
+			const url = decodeURIComponent(urlEncoded || '');
+			const title = decodeURIComponent(titleEncoded || '');
+
+			const menu = document.getElementById('customContextMenu');
+			menu.innerHTML = '';
+
+			if (type === 'video') {
+				menu.innerHTML = `
+					<div class="context-menu-item" onclick="quickDownload('${url}', '${esc(title)}', 'mp3', '320')">
+						<span class="iconify" data-icon="fluent:music-note-2-24-filled"></span> Hızlı İndir (MP3 320kbps)
+					</div>
+					<div class="context-menu-item" onclick="quickDownload('${url}', '${esc(title)}', 'mp4', '1080p')">
+						<span class="iconify" data-icon="fluent:video-24-filled"></span> Hızlı İndir (MP4 1080p)
+					</div>
+				`;
+			} else if (type === 'library') {
+				// in library case, 'id' is used to pass 'filename'
+				menu.innerHTML = `
+					<div class="context-menu-item danger" onclick="deleteLibraryItem('${esc(id)}')">
+						<span class="iconify" data-icon="fluent:delete-24-filled"></span> Dosyayı Sil
+					</div>
+				`;
+			}
+
+			menu.classList.add('active');
+
+			// Position the menu
+			let posX = e.pageX;
+			let posY = e.pageY;
+
+			// Prevent menu from overflowing the screen
+			const menuWidth = menu.offsetWidth || 220;
+			const menuHeight = menu.offsetHeight || 100;
+
+			if (posX + menuWidth > window.innerWidth) {
+				posX = window.innerWidth - menuWidth - 10;
+			}
+			if (posY + menuHeight > window.innerHeight) {
+				posY = window.innerHeight - menuHeight - 10;
+			}
+
+			menu.style.left = posX + 'px';
+			menu.style.top = posY + 'px';
+		}
+
+		function hideContextMenu() {
+			const menu = document.getElementById('customContextMenu');
+			if (menu.classList.contains('active')) {
+				menu.classList.remove('active');
+			}
+		}
+
+		document.addEventListener('click', hideContextMenu);
+		document.addEventListener('contextmenu', (e) => {
+			// Hide our custom menu if the user right clicks somewhere else
+			if (!e.target.closest('.video')) {
+				hideContextMenu();
+			}
+		});
+
+		function quickDownload(urlEncoded, titleEncoded, format, quality) {
+			hideContextMenu();
+			const url = decodeURIComponent(urlEncoded || '');
+			const title = decodeURIComponent(titleEncoded || '');
+			toggleQueue(); // open queue to show progress
+			fetch('/api/download?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(title) + '&ch=&format=' + format + '&quality=' + encodeURIComponent(quality))
+				.then(r => r.json())
+				.then(d => {
+					refreshQueue([]);
+				}).catch(() => { });
+		}
+
+		function deleteLibraryItem(filenameEncoded) {
+			hideContextMenu();
+			const filename = decodeURIComponent(filenameEncoded || '');
+			if (!confirm('Bu dosyayı bilgisayarınızdan silmek istediğinize emin misiniz?')) return;
+
+			fetch('/api/delete?path=' + encodeURIComponent(filename))
+				.then(r => r.json())
+				.then(data => {
+					if (data.ok) {
+						loadLibrary(); // reload library
+					} else {
+						alert('Dosya silinemedi: ' + data.error);
+					}
+				}).catch(e => {
+					alert('Silme işlemi sırasında hata oluştu.');
+				});
+		}
+
+		setInterval(checkBackgroundStatuses, 2000);
+
+		// ── Sidebar Toggle ────────────
+		function toggleSidebar() {
+			document.querySelector('.sidebar').classList.toggle('shrink');
+			document.querySelector('.header-navbar').style.left = document.querySelector('.sidebar').classList.contains('shrink') ? '72px' : '242px';
+		}
+
+		// ── Init ────────────
+		window.onload = () => {
+			const p = new URLSearchParams(window.location.search);
+			if (p.has('search')) {
+				searchAndActivate(p.get('search'));
+			} else {
+				loadHome();
+			}
+
+			// Intersection Observer for Infinite Scroll
+			const observer = new IntersectionObserver((entries) => {
+				if (entries[0].isIntersecting) loadMore();
+			}, { rootMargin: '200px' });
+			observer.observe(document.getElementById('loadMoreSentinel'));
+
+			// Audio Player Events
+			const audio = document.getElementById('htmlAudio');
+			const slider = document.getElementById('seekSlider');
+			const volSlider = document.getElementById('volSlider');
+			const cTime = document.getElementById('currentTime');
+			const tTime = document.getElementById('totalTime');
+
+			volSlider.addEventListener('input', (e) => {
+				audio.volume = e.target.value / 100;
+			});
+
+			audio.addEventListener('timeupdate', () => {
+				const perc = (audio.currentTime / audio.duration) * 100;
+				if (!isNaN(perc)) slider.value = perc;
+				cTime.textContent = formatTime(audio.currentTime);
+			});
+			audio.addEventListener('loadedmetadata', () => {
+				tTime.textContent = formatTime(audio.duration);
+			});
+			audio.addEventListener('ended', () => {
+				document.getElementById('playPauseBtn').textContent = '▶';
+				slider.value = 0;
+			});
+		};
+	</script>
+</body>
+
+</html>
