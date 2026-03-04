@@ -67,6 +67,18 @@
 	--search-bg: #121212;
 }
 
+html.light-mode {
+	--bg-color: #f9f9f9;
+	--card-bg: #ffffff;
+	--text-main: #030303;
+	--text-sub: #606060;
+	--text-sec: #606060;
+	--border-color: #e5e5e5;
+	--hover-bg: #f2f2f2;
+	--icon-color: #030303;
+	--search-bg: #ffffff;
+}
+
 body {
 	margin: 0;
 	padding: 0;
