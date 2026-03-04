@@ -1,936 +1,932 @@
 ﻿{
     "files":  [
                   {
-                      "hash":  "5697D01CE5F0768A5FDA4E38E03555A65A7A2F1A070A59FE669912780A47FABA",
-                      "path":  "manifest.json"
-                  },
-                  {
                       "hash":  "D18F5641A3B2F876EE774182258EF1AAF8E4F92E16B3E9AA2F46A1F50C1B1789",
-                      "path":  "publish/AngleSharp.dll"
+                      "path":  "AngleSharp.dll"
                   },
                   {
                       "hash":  "B906AE8FA88548736879C73530EB8CAC06189D64BA5AB632831CCC8E4C20774B",
-                      "path":  "publish/Avalonia.Base.dll"
+                      "path":  "Avalonia.Base.dll"
                   },
                   {
                       "hash":  "748DCBDF46BF38AD956BF9592A450CC70642E8C79C8456522D63B61A5CB31023",
-                      "path":  "publish/Avalonia.Controls.dll"
+                      "path":  "Avalonia.Controls.dll"
                   },
                   {
                       "hash":  "D63990183B8FCD133B3EB0C865C7359B1D9911FC9354A96311AD5EDAA71319C8",
-                      "path":  "publish/Avalonia.DesignerSupport.dll"
+                      "path":  "Avalonia.DesignerSupport.dll"
                   },
                   {
                       "hash":  "B34EA1D7999225BB8C0F0D3E20DBAFE98B87A6CB3B8C2F16EA769C727C357178",
-                      "path":  "publish/Avalonia.Desktop.dll"
+                      "path":  "Avalonia.Desktop.dll"
                   },
                   {
                       "hash":  "BBA0E1A3F8F11B073F88B6E7C3C5352B14231D228D6FC30F981EF0FD965CB775",
-                      "path":  "publish/Avalonia.Dialogs.dll"
+                      "path":  "Avalonia.Dialogs.dll"
                   },
                   {
                       "hash":  "A700B2B18995CC55AB2750228AF5416C2C91B87763A66ACAA496F64C92DCD995",
-                      "path":  "publish/Avalonia.dll"
+                      "path":  "Avalonia.dll"
                   },
                   {
                       "hash":  "527921E4FF0954C062A1A7414C384EBF10D3C0FE7A75534400C31F9273733C90",
-                      "path":  "publish/Avalonia.Fonts.Inter.dll"
+                      "path":  "Avalonia.Fonts.Inter.dll"
                   },
                   {
                       "hash":  "0CAAAEDE49B37FF7F72DE9B5970A774159882BFEFEFC32F5993490FC4E8BFFBA",
-                      "path":  "publish/Avalonia.FreeDesktop.dll"
+                      "path":  "Avalonia.FreeDesktop.dll"
                   },
                   {
                       "hash":  "82088593212C560AFEE1AFEFCB41DE24996B981A4E73A692F643369C495C1396",
-                      "path":  "publish/Avalonia.Markup.dll"
+                      "path":  "Avalonia.Markup.dll"
                   },
                   {
                       "hash":  "22E032BA56822671E3F12585482A1E74AE522C15E1C65858E977219B66873FA5",
-                      "path":  "publish/Avalonia.Markup.Xaml.dll"
+                      "path":  "Avalonia.Markup.Xaml.dll"
                   },
                   {
                       "hash":  "529EF21F4E8B908CC5A4144C520E81B46962CF68E30B7F6EB16522B64EF1F3F9",
-                      "path":  "publish/Avalonia.Metal.dll"
+                      "path":  "Avalonia.Metal.dll"
                   },
                   {
                       "hash":  "55249F1735039B245B23B721EA27452FBC57B303E9F5D9285BEFD5A468761F77",
-                      "path":  "publish/Avalonia.MicroCom.dll"
+                      "path":  "Avalonia.MicroCom.dll"
                   },
                   {
                       "hash":  "8E622A513D4F18EB7D769F01DDAB3C52DC3966DBC078C5B425EF2D50238BC3BF",
-                      "path":  "publish/Avalonia.Native.dll"
+                      "path":  "Avalonia.Native.dll"
                   },
                   {
                       "hash":  "C266352F6B7BADE07778E9996C6A65597CE25CF18DFF45B153AF24961FD557B6",
-                      "path":  "publish/Avalonia.OpenGL.dll"
+                      "path":  "Avalonia.OpenGL.dll"
                   },
                   {
                       "hash":  "0F6F908A5DEC5730D441F1E398E42CA9920EC5EAC76991BE326C65F16D992CA4",
-                      "path":  "publish/Avalonia.Remote.Protocol.dll"
+                      "path":  "Avalonia.Remote.Protocol.dll"
                   },
                   {
                       "hash":  "CCCF0C0F33E0491E21CF6E9CB4EA96F3894EEEE9C7DC5B44E6B1570C6818C38B",
-                      "path":  "publish/Avalonia.Skia.dll"
+                      "path":  "Avalonia.Skia.dll"
                   },
                   {
                       "hash":  "677564C21C4C18EC506A8442945F9339C065753B7FA5473DD3CAF99A42EEA82B",
-                      "path":  "publish/Avalonia.Themes.Fluent.dll"
+                      "path":  "Avalonia.Themes.Fluent.dll"
                   },
                   {
                       "hash":  "F11E85A3483AC675BE7FB5BB6E5306267B9203AFC9C4A0F7B22F891EAA54B540",
-                      "path":  "publish/Avalonia.Vulkan.dll"
+                      "path":  "Avalonia.Vulkan.dll"
                   },
                   {
                       "hash":  "409B03E8A105265D7DC4E52FBAE0D66866E1B0B2FD1589FB6115E66FD17C66E2",
-                      "path":  "publish/Avalonia.Win32.Automation.dll"
+                      "path":  "Avalonia.Win32.Automation.dll"
                   },
                   {
                       "hash":  "0D3DE34BE28775FAD932DFA5FA73E420629650BA5720F3E9AF1CAB0720D5BD6F",
-                      "path":  "publish/Avalonia.Win32.dll"
+                      "path":  "Avalonia.Win32.dll"
                   },
                   {
                       "hash":  "AF872711582A75979BB87A44C0C8819FE85D2162533A096607FE5B00EDAA5326",
-                      "path":  "publish/Avalonia.X11.dll"
+                      "path":  "Avalonia.X11.dll"
                   },
                   {
                       "hash":  "9B203E40323B49DAD29546A52B8B67D200BBA8FF4CAB9709A79CEDE23BA847D4",
-                      "path":  "publish/av_libglesv2.dll"
+                      "path":  "av_libglesv2.dll"
                   },
                   {
                       "hash":  "C1D8B1B90D35044C5644AEE38AB42BBDE062EC142077CEB85C85225773A49C1E",
-                      "path":  "publish/CliWrap.dll"
+                      "path":  "CliWrap.dll"
                   },
                   {
                       "hash":  "9C776F3838A466FD284A34361B88F92C180C112D1114FA956F8600A900055694",
-                      "path":  "publish/clretwrc.dll"
+                      "path":  "clretwrc.dll"
                   },
                   {
                       "hash":  "006AFD7BF6F3A934E125B017160663E306CA5FC371DCDF6F3990CDE0402E2489",
-                      "path":  "publish/clrgc.dll"
+                      "path":  "clrgc.dll"
                   },
                   {
                       "hash":  "D3A6452826679F53DB64520173F30A387ABC1A6CAF1BD7462CAB01D6B065C870",
-                      "path":  "publish/clrjit.dll"
+                      "path":  "clrjit.dll"
                   },
                   {
                       "hash":  "7D7EB5C066CFE883B439B1200BF5DCB387B1E5319DD2EDBDAA9E23ADFE416452",
-                      "path":  "publish/CommunityToolkit.Mvvm.dll"
+                      "path":  "CommunityToolkit.Mvvm.dll"
                   },
                   {
                       "hash":  "FF84E21AAB9700A145A44518F1FF1626D893F017BDA30AD0231FA61FA74A72A2",
-                      "path":  "publish/coreclr.dll"
+                      "path":  "coreclr.dll"
                   },
                   {
                       "hash":  "0A9CA842E22C33229C01B4453C808FEC2149400520DB6BD82449349D23B89AD8",
-                      "path":  "publish/createdump.exe"
+                      "path":  "createdump.exe"
                   },
                   {
                       "hash":  "951FDC1C6DB0BAD84AE9329297DEC0FCD38E1105EE477479EC66B8900E2F3BB5",
-                      "path":  "publish/HarfBuzzSharp.dll"
+                      "path":  "HarfBuzzSharp.dll"
                   },
                   {
                       "hash":  "681608247437E96EC508274AFF792BF9EA9FCE48FAF31301D1CED42879E237A6",
-                      "path":  "publish/hostfxr.dll"
+                      "path":  "hostfxr.dll"
                   },
                   {
                       "hash":  "0D2C892644E82FA155AB9DCD5AA6DB7F0D333744BFE1094CCADE4249D97C0A1E",
-                      "path":  "publish/hostpolicy.dll"
+                      "path":  "hostpolicy.dll"
                   },
                   {
                       "hash":  "EB76238C9E8E41D44B5A5B18167C4C5B39CA5DB4277AF5DBE92D730F0FC14A7D",
-                      "path":  "publish/libHarfBuzzSharp.dll"
+                      "path":  "libHarfBuzzSharp.dll"
                   },
                   {
                       "hash":  "9A0D95E8CAAA852C70D085AF6A40A744242172AD9EA3FD6BC7599875A8A1DBCD",
-                      "path":  "publish/libSkiaSharp.dll"
+                      "path":  "libSkiaSharp.dll"
                   },
                   {
                       "hash":  "59839E18E46B06AB23B633944AE3C3B552A300C5DA389DA870DFA980BCEF93C1",
-                      "path":  "publish/MicroCom.Runtime.dll"
+                      "path":  "MicroCom.Runtime.dll"
                   },
                   {
                       "hash":  "A477C1166A3A58AD33EC3BA347137E988141E11D6F1F3302AE578FDF105565DF",
-                      "path":  "publish/Microsoft.CSharp.dll"
+                      "path":  "Microsoft.CSharp.dll"
                   },
                   {
                       "hash":  "315A61C47C41B8D4C815F4274BB6584C1D24B4640C7EEDC354ED5B03A9A1361E",
-                      "path":  "publish/Microsoft.DiaSymReader.Native.amd64.dll"
+                      "path":  "Microsoft.DiaSymReader.Native.amd64.dll"
                   },
                   {
                       "hash":  "D2655BADD75ACA9B24E25A9015DAE47895CF57A6D23F065CDB8601FB1EE45629",
-                      "path":  "publish/Microsoft.VisualBasic.Core.dll"
+                      "path":  "Microsoft.VisualBasic.Core.dll"
                   },
                   {
                       "hash":  "89361DFC065C25D5AF43CDC1A51BCFB9B7A0C0D23B9C73CE4AE0EBA1C1C03653",
-                      "path":  "publish/Microsoft.VisualBasic.dll"
+                      "path":  "Microsoft.VisualBasic.dll"
                   },
                   {
                       "hash":  "E2325410FCE75B8F82C18C2C01084559F935540DAD4BD8239EF69149AECDE6F2",
-                      "path":  "publish/Microsoft.Win32.Primitives.dll"
+                      "path":  "Microsoft.Win32.Primitives.dll"
                   },
                   {
                       "hash":  "FA1DBF7ED09950A51ABBB1EB85F7399488C6825A9348178CCCDD34803040A4E6",
-                      "path":  "publish/Microsoft.Win32.Registry.dll"
+                      "path":  "Microsoft.Win32.Registry.dll"
                   },
                   {
                       "hash":  "16A9305143B47996D24BA9487F6CCD7187B24DF625F7BDD00E999A965E68C2B6",
-                      "path":  "publish/mscordaccore.dll"
+                      "path":  "mscordaccore.dll"
                   },
                   {
                       "hash":  "16A9305143B47996D24BA9487F6CCD7187B24DF625F7BDD00E999A965E68C2B6",
-                      "path":  "publish/mscordaccore_amd64_amd64_8.0.2426.7010.dll"
+                      "path":  "mscordaccore_amd64_amd64_8.0.2426.7010.dll"
                   },
                   {
                       "hash":  "126CEE99D2AA3F348B3524136377C7C25E0FCE99D072163A3CBA8C734AC64281",
-                      "path":  "publish/mscordbi.dll"
+                      "path":  "mscordbi.dll"
                   },
                   {
                       "hash":  "F70978E2471773413D56CF31F54B40E08A9A36E3215F3550FAA73639DBA12D23",
-                      "path":  "publish/mscorlib.dll"
+                      "path":  "mscorlib.dll"
                   },
                   {
                       "hash":  "1E879AFD21E9070426801F9810050074C68CAC09899B0EB4BF7306966656C1D9",
-                      "path":  "publish/mscorrc.dll"
+                      "path":  "mscorrc.dll"
                   },
                   {
                       "hash":  "B2B7FD2DC05B0009ACD3F0DE7BA443C660C87B1308774A5811FDB8873A76DE78",
-                      "path":  "publish/msquic.dll"
+                      "path":  "msquic.dll"
                   },
                   {
                       "hash":  "CA03780217139B37F7F5B6921D59DEFB8D24988315B16B167A77FA88CAA7D00F",
-                      "path":  "publish/NAudio.Asio.dll"
+                      "path":  "NAudio.Asio.dll"
                   },
                   {
                       "hash":  "FCF493FC47A2F478A65303886B975FBDBF714CBB1F2D79F7FCE97E4BB16B01A8",
-                      "path":  "publish/NAudio.Core.dll"
+                      "path":  "NAudio.Core.dll"
                   },
                   {
                       "hash":  "31D89AB89171978F0BA2581A85F2FB437057702C1C46CC05ECADDD898FE60BB7",
-                      "path":  "publish/NAudio.dll"
+                      "path":  "NAudio.dll"
                   },
                   {
                       "hash":  "F246E29921797B173B54229685E997A11F9CC388FA1E589C212328ABD7A94EBE",
-                      "path":  "publish/NAudio.Midi.dll"
+                      "path":  "NAudio.Midi.dll"
                   },
                   {
                       "hash":  "618EF0E49D64E7A66DFE64BBF6AE81705B9D9683D8A9F321E5C3024D666BDF82",
-                      "path":  "publish/NAudio.Wasapi.dll"
+                      "path":  "NAudio.Wasapi.dll"
                   },
                   {
                       "hash":  "749A01EBBB5EDD8B1A03C5263B04DE6ACADECF52E4CC84D7412BC6E93F180958",
-                      "path":  "publish/NAudio.WinMM.dll"
+                      "path":  "NAudio.WinMM.dll"
                   },
                   {
                       "hash":  "D7DF10DFC02D427F3165C2BBBC2A6008C5196238E6ECC86495053846A6D7D2DB",
-                      "path":  "publish/netstandard.dll"
+                      "path":  "netstandard.dll"
                   },
                   {
                       "hash":  "17EE1284313749F73A5CF5F309318D831741A8D6D397C998C5FC6485843C28BB",
-                      "path":  "publish/SkiaSharp.dll"
+                      "path":  "SkiaSharp.dll"
                   },
                   {
                       "hash":  "DCDFEA0FBA4167706F95A0C07BA8618BD4425F38A6D4D2172FC651AA14A1ACBD",
-                      "path":  "publish/System.AppContext.dll"
+                      "path":  "System.AppContext.dll"
                   },
                   {
                       "hash":  "5B7CEC3CE38949AF093F5A9F2C6184C806B64CA7B266A06145E1DB8C1008ACE1",
-                      "path":  "publish/System.Buffers.dll"
+                      "path":  "System.Buffers.dll"
                   },
                   {
                       "hash":  "691F6A4431B0A09018D4C4589EC2E8456CC4A1CB0FB442B16287AC35A3D5255D",
-                      "path":  "publish/System.Collections.Concurrent.dll"
+                      "path":  "System.Collections.Concurrent.dll"
                   },
                   {
                       "hash":  "593BFD1F70A4D877441809F099DA67EFC419FC114E1BDB5FC1A2AF904003E679",
-                      "path":  "publish/System.Collections.dll"
+                      "path":  "System.Collections.dll"
                   },
                   {
                       "hash":  "998E5BD635371153BA58E9C468A4E0DF2C5300368B09C7B89E4E88512037CB15",
-                      "path":  "publish/System.Collections.Immutable.dll"
+                      "path":  "System.Collections.Immutable.dll"
                   },
                   {
                       "hash":  "C3480AEE9E83EA81EC150CF590970C64CDC2FC7167A3D308957A1F5C14549965",
-                      "path":  "publish/System.Collections.NonGeneric.dll"
+                      "path":  "System.Collections.NonGeneric.dll"
                   },
                   {
                       "hash":  "1DBE25074CDBF92AF3183BA0521FE17535C859FC224CF42FCFEEF35AC6925056",
-                      "path":  "publish/System.Collections.Specialized.dll"
+                      "path":  "System.Collections.Specialized.dll"
                   },
                   {
                       "hash":  "ED121E1AA1B293E885A570C28B85CAB69E29AD311D2A6BC09C36533D342ECC23",
-                      "path":  "publish/System.ComponentModel.Annotations.dll"
+                      "path":  "System.ComponentModel.Annotations.dll"
                   },
                   {
                       "hash":  "DE2DB36E94034C2CC8A94EBB4970D8458C45DD607A4D27BA4FBABDFF8A0E4D29",
-                      "path":  "publish/System.ComponentModel.DataAnnotations.dll"
+                      "path":  "System.ComponentModel.DataAnnotations.dll"
                   },
                   {
                       "hash":  "AB157B4310CF2EAAD831893CF253FC9F3149DD81CF934B908E06E58ECC33A036",
-                      "path":  "publish/System.ComponentModel.dll"
+                      "path":  "System.ComponentModel.dll"
                   },
                   {
                       "hash":  "0286B8303CD61DEDE69FD624ED9C7D2BDAAC5250F07EE904D731C7C1849712FE",
-                      "path":  "publish/System.ComponentModel.EventBasedAsync.dll"
+                      "path":  "System.ComponentModel.EventBasedAsync.dll"
                   },
                   {
                       "hash":  "5DF06616663BBEF65D1E0D7E8483617FEF524031805367C2CE5519BFF3A186FC",
-                      "path":  "publish/System.ComponentModel.Primitives.dll"
+                      "path":  "System.ComponentModel.Primitives.dll"
                   },
                   {
                       "hash":  "8B686D8273FEF5DD92F5DCCF6D685A0E7F870EC998BF6F7D708AC230EB226BCE",
-                      "path":  "publish/System.ComponentModel.TypeConverter.dll"
+                      "path":  "System.ComponentModel.TypeConverter.dll"
                   },
                   {
                       "hash":  "A065FDEC7438C2DFC9FEB4F72BE9A4704DA364DBAA6287CC2D4D7F79ABA5C1FC",
-                      "path":  "publish/System.Configuration.dll"
+                      "path":  "System.Configuration.dll"
                   },
                   {
                       "hash":  "4B7643EE293B894FBE4326B0BC08AEC7BF9BE880D3C18E94A221EE47B9969F49",
-                      "path":  "publish/System.Console.dll"
+                      "path":  "System.Console.dll"
                   },
                   {
                       "hash":  "E21C37D81B595DADC343174B3558A3CD7773844C1BC77E1CE4F33B68B116CCAF",
-                      "path":  "publish/System.Core.dll"
+                      "path":  "System.Core.dll"
                   },
                   {
                       "hash":  "4555FAC969496B6745BD1DADDF71CB9344807EF4CFAAE4140AC58408BE3A4561",
-                      "path":  "publish/System.Data.Common.dll"
+                      "path":  "System.Data.Common.dll"
                   },
                   {
                       "hash":  "013F0E62C8C5725D78FA17E8D231953D6D8E326FE75DCAD2BB22EA39C00CCD66",
-                      "path":  "publish/System.Data.DataSetExtensions.dll"
+                      "path":  "System.Data.DataSetExtensions.dll"
                   },
                   {
                       "hash":  "D8175EF96B625B512EE9FBB9A2C2E9AE9130040284A0EDB76C0A24A5895FD2BE",
-                      "path":  "publish/System.Data.dll"
+                      "path":  "System.Data.dll"
                   },
                   {
                       "hash":  "E86E7580356AF7C6C19CA8B77F18DAE23CC24AC997DBE622E490BE4237F5D1CF",
-                      "path":  "publish/System.Diagnostics.Contracts.dll"
+                      "path":  "System.Diagnostics.Contracts.dll"
                   },
                   {
                       "hash":  "B63BD7728FAF30986FA6B8D99F096FB4785BE3C17DF6F954B4629464D6924045",
-                      "path":  "publish/System.Diagnostics.Debug.dll"
+                      "path":  "System.Diagnostics.Debug.dll"
                   },
                   {
                       "hash":  "CF65D2DEA7C6770371871B63CDA524EE6EA40B9D25017CFD0A60C8A03E4B1AEE",
-                      "path":  "publish/System.Diagnostics.DiagnosticSource.dll"
+                      "path":  "System.Diagnostics.DiagnosticSource.dll"
                   },
                   {
                       "hash":  "5B66FCBC31C344B9267CDDDED567C25018EE2464694C05236B10C3EED94A5F0D",
-                      "path":  "publish/System.Diagnostics.FileVersionInfo.dll"
+                      "path":  "System.Diagnostics.FileVersionInfo.dll"
                   },
                   {
                       "hash":  "DC466DF5510C3F3ED3C1786C09C5ABE00DF95B87020247327229E3FC3D9422D0",
-                      "path":  "publish/System.Diagnostics.Process.dll"
+                      "path":  "System.Diagnostics.Process.dll"
                   },
                   {
                       "hash":  "4A10DFA21ECBD0A9B0FC7354F5EB0CBF94E0CDF947488EADA95D68840272D597",
-                      "path":  "publish/System.Diagnostics.StackTrace.dll"
+                      "path":  "System.Diagnostics.StackTrace.dll"
                   },
                   {
                       "hash":  "E5E083EF4823985E66D673DE54AF817348F682DE1B95F1E9D7075E821C80621F",
-                      "path":  "publish/System.Diagnostics.TextWriterTraceListener.dll"
+                      "path":  "System.Diagnostics.TextWriterTraceListener.dll"
                   },
                   {
                       "hash":  "CD1A8E3CAC64FBD18CC0C1CD338441FE20EF5A7E67A5E4FBF849B3E3679BAAA5",
-                      "path":  "publish/System.Diagnostics.Tools.dll"
+                      "path":  "System.Diagnostics.Tools.dll"
                   },
                   {
                       "hash":  "966D2F3A696CA8E18CEF4433C908992E9D84C3FE08989E363A35FD8F1ED550D4",
-                      "path":  "publish/System.Diagnostics.TraceSource.dll"
+                      "path":  "System.Diagnostics.TraceSource.dll"
                   },
                   {
                       "hash":  "D19F84F434C349CB36AE281490387CB11F590A0C25954F84BE8BDC4BA8183BF2",
-                      "path":  "publish/System.Diagnostics.Tracing.dll"
+                      "path":  "System.Diagnostics.Tracing.dll"
                   },
                   {
                       "hash":  "5B910E205152F0711DAF19C645F060F68530269F1034FC6E5CF150C8BE7F2133",
-                      "path":  "publish/System.dll"
+                      "path":  "System.dll"
                   },
                   {
                       "hash":  "41E5DC068A2B027056A22E6EAEFE426F55BDC4E3556422CC6B1D6F7C371B3B03",
-                      "path":  "publish/System.Drawing.dll"
+                      "path":  "System.Drawing.dll"
                   },
                   {
                       "hash":  "B3FA7F952BEDF262AF7679E39625DD21947C6790B3BF220861E57D2D3A1608D9",
-                      "path":  "publish/System.Drawing.Primitives.dll"
+                      "path":  "System.Drawing.Primitives.dll"
                   },
                   {
                       "hash":  "12645DAA353CE33501ECE50FA0D0708E2820500226A48D7CBC3DCBB10386AC10",
-                      "path":  "publish/System.Dynamic.Runtime.dll"
+                      "path":  "System.Dynamic.Runtime.dll"
                   },
                   {
                       "hash":  "AF2AE504A4F5C9FEDF1CFD6C1EE45BF0909D725C0D2ED66191F82A81DD473976",
-                      "path":  "publish/System.Formats.Asn1.dll"
+                      "path":  "System.Formats.Asn1.dll"
                   },
                   {
                       "hash":  "FD0CBFB2812EABE7D71027511A1290F82873D0141A472B40F49BBFBC5337E7F0",
-                      "path":  "publish/System.Formats.Tar.dll"
+                      "path":  "System.Formats.Tar.dll"
                   },
                   {
                       "hash":  "ECA3CB50DAE936785A7557E739A3BD47051279B220FCD75521F4D41DEE09024D",
-                      "path":  "publish/System.Globalization.Calendars.dll"
+                      "path":  "System.Globalization.Calendars.dll"
                   },
                   {
                       "hash":  "5D636CCD2EA499632A82038839AD5A82675BA3E22422A63B066536A6651DED44",
-                      "path":  "publish/System.Globalization.dll"
+                      "path":  "System.Globalization.dll"
                   },
                   {
                       "hash":  "894C85D85BC268BB201AF5E53F3F7671470BEED1615809CB79EE8098073D6E75",
-                      "path":  "publish/System.Globalization.Extensions.dll"
+                      "path":  "System.Globalization.Extensions.dll"
                   },
                   {
                       "hash":  "ACB4961919541C5ED57A29F1AA9D3A70E7BB568CDF135ABD1C150286A8905C5C",
-                      "path":  "publish/System.IO.Compression.Brotli.dll"
+                      "path":  "System.IO.Compression.Brotli.dll"
                   },
                   {
                       "hash":  "EA8F6730EB84A3E46477271CD11322530AED87258FF0A71978F5B1F877589C84",
-                      "path":  "publish/System.IO.Compression.dll"
+                      "path":  "System.IO.Compression.dll"
                   },
                   {
                       "hash":  "59727CAAAA618410AB99A376605626FA494B905E054A587F860CD05D610A4D50",
-                      "path":  "publish/System.IO.Compression.FileSystem.dll"
+                      "path":  "System.IO.Compression.FileSystem.dll"
                   },
                   {
                       "hash":  "B9ADD6A66244CCD23B7FF3696DB752474E88B54C37D4C74EA89B8EA8A2E9C123",
-                      "path":  "publish/System.IO.Compression.Native.dll"
+                      "path":  "System.IO.Compression.Native.dll"
                   },
                   {
                       "hash":  "42C85DF305C546934C24346E90EAC7F4CFD9203E8DE06A598F28958B975F191E",
-                      "path":  "publish/System.IO.Compression.ZipFile.dll"
+                      "path":  "System.IO.Compression.ZipFile.dll"
                   },
                   {
                       "hash":  "A6E98127DE7C9D11971B3FDFAEDDBE1804B3888DD752602BE4177BA238133A39",
-                      "path":  "publish/System.IO.dll"
+                      "path":  "System.IO.dll"
                   },
                   {
                       "hash":  "365D316EAE7943358A9A9C8BEAE653462FC7F8358303983B6BE8988F2962FC1A",
-                      "path":  "publish/System.IO.FileSystem.AccessControl.dll"
+                      "path":  "System.IO.FileSystem.AccessControl.dll"
                   },
                   {
                       "hash":  "3C90BC1FFAD2F2EB20ACECBC4E65A06676BAE90E28F7DCD58F8B154ACB456BBC",
-                      "path":  "publish/System.IO.FileSystem.dll"
+                      "path":  "System.IO.FileSystem.dll"
                   },
                   {
                       "hash":  "1C91CF665205DBD9A294BDD0F17D08567C44DB962A13049133E3DF78A9B7488D",
-                      "path":  "publish/System.IO.FileSystem.DriveInfo.dll"
+                      "path":  "System.IO.FileSystem.DriveInfo.dll"
                   },
                   {
                       "hash":  "1DCA3762E192CAD6D1942E0AA84C370ECE96F0FEE7A8777CF002C74858A1CAC3",
-                      "path":  "publish/System.IO.FileSystem.Primitives.dll"
+                      "path":  "System.IO.FileSystem.Primitives.dll"
                   },
                   {
                       "hash":  "CAF2658D396C67676A268AF51F8FB2526144801F52C0729CB99789BD0A7ED71D",
-                      "path":  "publish/System.IO.FileSystem.Watcher.dll"
+                      "path":  "System.IO.FileSystem.Watcher.dll"
                   },
                   {
                       "hash":  "613C14BD07AD5A4892F6C3D0E4AC9FE35AB32EFB5A40D59C15A58657113B87AC",
-                      "path":  "publish/System.IO.IsolatedStorage.dll"
+                      "path":  "System.IO.IsolatedStorage.dll"
                   },
                   {
                       "hash":  "B1B608E0E2721775C5303CD7EB25F16BE25EA4026BEAA79CA827A27F9E528DB0",
-                      "path":  "publish/System.IO.MemoryMappedFiles.dll"
+                      "path":  "System.IO.MemoryMappedFiles.dll"
                   },
                   {
                       "hash":  "86D0F5BFAAF1B2AB19331B543A736D87B5B58E72158F4DED282122B2E6665F83",
-                      "path":  "publish/System.IO.Pipelines.dll"
+                      "path":  "System.IO.Pipelines.dll"
                   },
                   {
                       "hash":  "531CE048D2BACBD66F2D431AEE4AC47B107565C8A679A34F6E53CB3CD49FFBC5",
-                      "path":  "publish/System.IO.Pipes.AccessControl.dll"
+                      "path":  "System.IO.Pipes.AccessControl.dll"
                   },
                   {
                       "hash":  "FA11B26614B020079AB9BFCBC04E148B8F303793E567251034AB1A50CCDA4A68",
-                      "path":  "publish/System.IO.Pipes.dll"
+                      "path":  "System.IO.Pipes.dll"
                   },
                   {
                       "hash":  "6E738BF8212319FB5DD21F55E53DF091075823A3406BAAFBE9683F223823C4F9",
-                      "path":  "publish/System.IO.UnmanagedMemoryStream.dll"
+                      "path":  "System.IO.UnmanagedMemoryStream.dll"
                   },
                   {
                       "hash":  "4F63CDEFBAD5358F58FF672DB6498B283B15BF733015391AF024D1428CEA0334",
-                      "path":  "publish/System.Linq.dll"
+                      "path":  "System.Linq.dll"
                   },
                   {
                       "hash":  "7ADEC6419DCF9446218553C2B9A6947E88BEBB04766294532CF18F77C7596A1B",
-                      "path":  "publish/System.Linq.Expressions.dll"
+                      "path":  "System.Linq.Expressions.dll"
                   },
                   {
                       "hash":  "F70AB7E26238FEA52F0A8E000D99A5E28517224EF5BEB8452961398B42872F88",
-                      "path":  "publish/System.Linq.Parallel.dll"
+                      "path":  "System.Linq.Parallel.dll"
                   },
                   {
                       "hash":  "857A9F371B94E5DDC5704B1ABEE8F61A458D2F8884517E747485E37B1EF5B24A",
-                      "path":  "publish/System.Linq.Queryable.dll"
+                      "path":  "System.Linq.Queryable.dll"
                   },
                   {
                       "hash":  "1E6F52E4837BD0D79F806BDE1ECAFC764127B2C54C200D541E8E5216A7D0D839",
-                      "path":  "publish/System.Memory.dll"
+                      "path":  "System.Memory.dll"
                   },
                   {
                       "hash":  "A8B8FB77212A0E72B1D71DC6FD646B3E2C9886849C7B3D3D9E54E2C38FE22845",
-                      "path":  "publish/System.Net.dll"
+                      "path":  "System.Net.dll"
                   },
                   {
                       "hash":  "BEABC538DB7CA56C99A40B3AFDE26B64519F4EAC8327DDA65BBB655C21795FF3",
-                      "path":  "publish/System.Net.Http.dll"
+                      "path":  "System.Net.Http.dll"
                   },
                   {
                       "hash":  "0208CF96BBBD1338BC4822F6BE2CB99E1EDC07C40CC3671BA17EBCFC56630C65",
-                      "path":  "publish/System.Net.Http.Json.dll"
+                      "path":  "System.Net.Http.Json.dll"
                   },
                   {
                       "hash":  "6A225E702B9D05774FA4E065FD41C0EDFB87BEA9C9ED8A0F7CC441BD38EDAC3E",
-                      "path":  "publish/System.Net.HttpListener.dll"
+                      "path":  "System.Net.HttpListener.dll"
                   },
                   {
                       "hash":  "C1FCF8201443D5C0139E717E51885E8E4122C0A248B742D4DA2ADD29C8799FFC",
-                      "path":  "publish/System.Net.Mail.dll"
+                      "path":  "System.Net.Mail.dll"
                   },
                   {
                       "hash":  "38F95B72FDD2CFF522A36FF97194E26D0426C8A3E92F497B336372731F50A5A7",
-                      "path":  "publish/System.Net.NameResolution.dll"
+                      "path":  "System.Net.NameResolution.dll"
                   },
                   {
                       "hash":  "31019940CCD155199EE84F746FD76ACDF1A11C6182CBF48DF759D6450D6C43A2",
-                      "path":  "publish/System.Net.NetworkInformation.dll"
+                      "path":  "System.Net.NetworkInformation.dll"
                   },
                   {
                       "hash":  "33FAD7625C5B6B184C8D4F8F6D7E0C2011F6743223B6D61486A7802EBE5BDBA3",
-                      "path":  "publish/System.Net.Ping.dll"
+                      "path":  "System.Net.Ping.dll"
                   },
                   {
                       "hash":  "0E0B5559ADDEBA55B8EC4684D50240BF8EF21FACBFD9E02028972CA9200B135C",
-                      "path":  "publish/System.Net.Primitives.dll"
+                      "path":  "System.Net.Primitives.dll"
                   },
                   {
                       "hash":  "955623AE534483BD0578737706CAB0CBBC56E1C8F4110518479C9A6745E8899B",
-                      "path":  "publish/System.Net.Quic.dll"
+                      "path":  "System.Net.Quic.dll"
                   },
                   {
                       "hash":  "E5D80F381EB7AD0EF142F1F1C11C5D729469E027A8DF28971ADEB173EA12A89E",
-                      "path":  "publish/System.Net.Requests.dll"
+                      "path":  "System.Net.Requests.dll"
                   },
                   {
                       "hash":  "DFE07F4CF0BE368029071BA18A3F7AC9A8651CF42C7A01A7A0D1A0D26969E28F",
-                      "path":  "publish/System.Net.Security.dll"
+                      "path":  "System.Net.Security.dll"
                   },
                   {
                       "hash":  "40E0D4C59E54E4950207D5DFB0D0005AF29E6947D5DCDD1EA8D989C2C569CB30",
-                      "path":  "publish/System.Net.ServicePoint.dll"
+                      "path":  "System.Net.ServicePoint.dll"
                   },
                   {
                       "hash":  "873CC8D5315278051C67B8ABAB4EC80C48A10217BBDEA87C528AFC3BA991E6F9",
-                      "path":  "publish/System.Net.Sockets.dll"
+                      "path":  "System.Net.Sockets.dll"
                   },
                   {
                       "hash":  "A92A51F734BBFBD439473E08A50DA984E6074B62D85712E776C4862118558946",
-                      "path":  "publish/System.Net.WebClient.dll"
+                      "path":  "System.Net.WebClient.dll"
                   },
                   {
                       "hash":  "C6AADA4685D018EF64C1754FD2129C1D2063C878B9C7AF33C2FA00343686679F",
-                      "path":  "publish/System.Net.WebHeaderCollection.dll"
+                      "path":  "System.Net.WebHeaderCollection.dll"
                   },
                   {
                       "hash":  "F7CC66D3F80C23209A508D86C0D982632BF696690326E27ABB6688EE472DFDD8",
-                      "path":  "publish/System.Net.WebProxy.dll"
+                      "path":  "System.Net.WebProxy.dll"
                   },
                   {
                       "hash":  "F2B5287F7C91C04D35EF991164BEEE84EE9F4EC7523B25B6F578A831278FD74E",
-                      "path":  "publish/System.Net.WebSockets.Client.dll"
+                      "path":  "System.Net.WebSockets.Client.dll"
                   },
                   {
                       "hash":  "8CD8DEFC7FD36AAAC689DC104E1279C5BFCD09271A886FB3B0AE47477367CD82",
-                      "path":  "publish/System.Net.WebSockets.dll"
+                      "path":  "System.Net.WebSockets.dll"
                   },
                   {
                       "hash":  "8C8567979FEFA73528A737D40D9226122C4A0535B360746113B0F6C3C6B2D9F0",
-                      "path":  "publish/System.Numerics.dll"
+                      "path":  "System.Numerics.dll"
                   },
                   {
                       "hash":  "6FC60ADC117431C23AEB22E7655256B4AF6E0D11D6E93D39C30C67177CC31D45",
-                      "path":  "publish/System.Numerics.Vectors.dll"
+                      "path":  "System.Numerics.Vectors.dll"
                   },
                   {
                       "hash":  "3EE02FD08508EB34C84DED4A89F42E4B74A6FEFA4E2C1122FA6ABBE22FE532CE",
-                      "path":  "publish/System.ObjectModel.dll"
+                      "path":  "System.ObjectModel.dll"
                   },
                   {
                       "hash":  "8F078B97C0BD41312137D34D4C5759D5AD4B138697D092D1FEB01D9BCF9B2790",
-                      "path":  "publish/System.Private.CoreLib.dll"
+                      "path":  "System.Private.CoreLib.dll"
                   },
                   {
                       "hash":  "7117E8F1DFA25F8431B5995E76BB053B4444E80AC5F42C1DDE932DFC2272F075",
-                      "path":  "publish/System.Private.DataContractSerialization.dll"
+                      "path":  "System.Private.DataContractSerialization.dll"
                   },
                   {
                       "hash":  "635137A1D8426F7C7D9F08C09ACB22BDAAB8906FB73563D95B02AD10E0B51695",
-                      "path":  "publish/System.Private.Uri.dll"
+                      "path":  "System.Private.Uri.dll"
                   },
                   {
                       "hash":  "3307B905B589CF266E8697F28ABB3BF9F30DC0A3BD9E4B32AE81C0634600039A",
-                      "path":  "publish/System.Private.Xml.dll"
+                      "path":  "System.Private.Xml.dll"
                   },
                   {
                       "hash":  "0EB1E793D58C6C81BE11386BF81092EA0CF207336571D4D3E2986242DFD35754",
-                      "path":  "publish/System.Private.Xml.Linq.dll"
+                      "path":  "System.Private.Xml.Linq.dll"
                   },
                   {
                       "hash":  "27E3386604333A7DEEDB5E7538839942F5720B1AA873C6345408664542A294F8",
-                      "path":  "publish/System.Reflection.DispatchProxy.dll"
+                      "path":  "System.Reflection.DispatchProxy.dll"
                   },
                   {
                       "hash":  "13F693FF842A65448F03E60D50BB020D27B11C57A3FA19A803E42574E8CB83F2",
-                      "path":  "publish/System.Reflection.dll"
+                      "path":  "System.Reflection.dll"
                   },
                   {
                       "hash":  "8ED2694B576381E59866836B36FC0EF016140224E79D3E6A905324EA35B4978F",
-                      "path":  "publish/System.Reflection.Emit.dll"
+                      "path":  "System.Reflection.Emit.dll"
                   },
                   {
                       "hash":  "AE47751A2D032D7269759DAA1EE97A6FFB0A0E63A6AEAD090B009592A469EB1C",
-                      "path":  "publish/System.Reflection.Emit.ILGeneration.dll"
+                      "path":  "System.Reflection.Emit.ILGeneration.dll"
                   },
                   {
                       "hash":  "FA08D58251367B33B95D75252CB835CB710ADF9A220099EB30C96264A3B73A71",
-                      "path":  "publish/System.Reflection.Emit.Lightweight.dll"
+                      "path":  "System.Reflection.Emit.Lightweight.dll"
                   },
                   {
                       "hash":  "70235A191C9BC308A34C25F32232F0AC685DA6C431E2D1CA0CC00D9C402E227A",
-                      "path":  "publish/System.Reflection.Extensions.dll"
+                      "path":  "System.Reflection.Extensions.dll"
                   },
                   {
                       "hash":  "F3AB642FC2A102EFD465CB49F4998524C7572228BE4B0D2E70BCB1B8BBA4933C",
-                      "path":  "publish/System.Reflection.Metadata.dll"
+                      "path":  "System.Reflection.Metadata.dll"
                   },
                   {
                       "hash":  "657ED5F5CFB406B806F2CBC34D4DFBEB2E9C6B65F8D42C41DD5FF3FF46E4001E",
-                      "path":  "publish/System.Reflection.Primitives.dll"
+                      "path":  "System.Reflection.Primitives.dll"
                   },
                   {
                       "hash":  "BF6490C507914C480247E30260223B9C8851101C0C734C7564CD79D63DECB393",
-                      "path":  "publish/System.Reflection.TypeExtensions.dll"
+                      "path":  "System.Reflection.TypeExtensions.dll"
                   },
                   {
                       "hash":  "EF6C5B7D4C0E79FB6CDED4A4B5C3A50D9C8FC8810EEDF3632FD6620440FCC91B",
-                      "path":  "publish/System.Resources.Reader.dll"
+                      "path":  "System.Resources.Reader.dll"
                   },
                   {
                       "hash":  "CFF1457CB342F0B97C8A032AECE249FDE6EEF25E9EBB5EE0A603B30FA505AA08",
-                      "path":  "publish/System.Resources.ResourceManager.dll"
+                      "path":  "System.Resources.ResourceManager.dll"
                   },
                   {
                       "hash":  "001DC22D5205F5CDC3BA7F1A99FC6B9F825947ECA8DFA1605A8B192CCD7B4EF6",
-                      "path":  "publish/System.Resources.Writer.dll"
+                      "path":  "System.Resources.Writer.dll"
                   },
                   {
                       "hash":  "BCE80E35DF5DD35DBA96E7C402FF7E0C3292FCBEDD08086E1C536A3B9BAD819D",
-                      "path":  "publish/System.Runtime.CompilerServices.Unsafe.dll"
+                      "path":  "System.Runtime.CompilerServices.Unsafe.dll"
                   },
                   {
                       "hash":  "FB0AF73FFA2FCA9112FD7C3B87C225152D6EE46F9D5A119941A8F5578D4C79A9",
-                      "path":  "publish/System.Runtime.CompilerServices.VisualC.dll"
+                      "path":  "System.Runtime.CompilerServices.VisualC.dll"
                   },
                   {
                       "hash":  "7D104204EB3D859F8963011DF299710BAFBBAD7F9AB39802B364A462F14151C1",
-                      "path":  "publish/System.Runtime.dll"
+                      "path":  "System.Runtime.dll"
                   },
                   {
                       "hash":  "D2C33E71C78F0705731D0121E61AC1D2397845686C7D8FDDD051887B4EDB6949",
-                      "path":  "publish/System.Runtime.Extensions.dll"
+                      "path":  "System.Runtime.Extensions.dll"
                   },
                   {
                       "hash":  "A166041B2627A95B2E6ADE904A9BE104A6C7AAB78B9BEE60F7CBA36AD2EC8838",
-                      "path":  "publish/System.Runtime.Handles.dll"
+                      "path":  "System.Runtime.Handles.dll"
                   },
                   {
                       "hash":  "C07FC9FBF4DD7897BBB0B52115F4920182501892F604D1844CA2BA874F410589",
-                      "path":  "publish/System.Runtime.InteropServices.dll"
+                      "path":  "System.Runtime.InteropServices.dll"
                   },
                   {
                       "hash":  "0761AA90038EF2975B3874D456355720C6A41E9FA26A5B9E8BC040091E4AEB64",
-                      "path":  "publish/System.Runtime.InteropServices.JavaScript.dll"
+                      "path":  "System.Runtime.InteropServices.JavaScript.dll"
                   },
                   {
                       "hash":  "5DBD65CFB36BC9E9A5D4E845610FEB9B2AE894B98DA5CEC4D7581C8F29C8E0D9",
-                      "path":  "publish/System.Runtime.InteropServices.RuntimeInformation.dll"
+                      "path":  "System.Runtime.InteropServices.RuntimeInformation.dll"
                   },
                   {
                       "hash":  "B7DDE10AAEE3CE4D1039D416CDF9345C12E83A2ACED5D2A2F531E945E4ED306F",
-                      "path":  "publish/System.Runtime.Intrinsics.dll"
+                      "path":  "System.Runtime.Intrinsics.dll"
                   },
                   {
                       "hash":  "4040716BBA180C026A8AE67B75884AEEB806E0F8FD67ADF7930ADF51CB108CB1",
-                      "path":  "publish/System.Runtime.Loader.dll"
+                      "path":  "System.Runtime.Loader.dll"
                   },
                   {
                       "hash":  "E9541C41FE64AEBB2C7CAA5DFB6A8E3BBE488F8D88F05C1E395B53E1A1FACD76",
-                      "path":  "publish/System.Runtime.Numerics.dll"
+                      "path":  "System.Runtime.Numerics.dll"
                   },
                   {
                       "hash":  "97C6CEFB2E98132D147CE8A376DB9668BA72E7E6F4B0C2E1D0B59C8F61A7AB2F",
-                      "path":  "publish/System.Runtime.Serialization.dll"
+                      "path":  "System.Runtime.Serialization.dll"
                   },
                   {
                       "hash":  "977D28F987EB575813B6E967CBA59C4155077DDE3B80F846D2F52996DD932179",
-                      "path":  "publish/System.Runtime.Serialization.Formatters.dll"
+                      "path":  "System.Runtime.Serialization.Formatters.dll"
                   },
                   {
                       "hash":  "14C609C1206C8DF4F2BC28E0F2262A5156FCB19E99135E4A55A626948BF00044",
-                      "path":  "publish/System.Runtime.Serialization.Json.dll"
+                      "path":  "System.Runtime.Serialization.Json.dll"
                   },
                   {
                       "hash":  "DE4004A0C94984D259CB1A57E3C3B12FBB0C604213382CD0D0ED0EB458C75C80",
-                      "path":  "publish/System.Runtime.Serialization.Primitives.dll"
+                      "path":  "System.Runtime.Serialization.Primitives.dll"
                   },
                   {
                       "hash":  "10123FB814A6CD0EE195F3729FD0DA0F925E8F8EA84046DEE07F390ED0C18633",
-                      "path":  "publish/System.Runtime.Serialization.Xml.dll"
+                      "path":  "System.Runtime.Serialization.Xml.dll"
                   },
                   {
                       "hash":  "F27233453C9D7321C889EBA9AED34DE624D7A8104EEDC3177AD93B066240A517",
-                      "path":  "publish/System.Security.AccessControl.dll"
+                      "path":  "System.Security.AccessControl.dll"
                   },
                   {
                       "hash":  "20473710B99F79412ABDE40AC4702C1A8DCE4CEEAA7298AA099BBD123FF0B467",
-                      "path":  "publish/System.Security.Claims.dll"
+                      "path":  "System.Security.Claims.dll"
                   },
                   {
                       "hash":  "A0C9EECB93D16D536F60DDD6D10F6FC8A11B24DDDDCC4AC6CB76189A89890C80",
-                      "path":  "publish/System.Security.Cryptography.Algorithms.dll"
+                      "path":  "System.Security.Cryptography.Algorithms.dll"
                   },
                   {
                       "hash":  "310E39D2AFFC9C62F540275C5DBF6119160BF9AE35120689541D9FFBCF9AB6C8",
-                      "path":  "publish/System.Security.Cryptography.Cng.dll"
+                      "path":  "System.Security.Cryptography.Cng.dll"
                   },
                   {
                       "hash":  "90C4C2A2B36D76558019F2A1C83ED0FF9A60D873E60A53898DE4D8006E1A925F",
-                      "path":  "publish/System.Security.Cryptography.Csp.dll"
+                      "path":  "System.Security.Cryptography.Csp.dll"
                   },
                   {
                       "hash":  "A147D2380ABA00FEE54E02173FD40F0C3B1E97A1E88A3F1BAC6EC25E8127DE00",
-                      "path":  "publish/System.Security.Cryptography.dll"
+                      "path":  "System.Security.Cryptography.dll"
                   },
                   {
                       "hash":  "BE3114365B6DEAFC2351059A8B14561CBFCD338068C322CCACD3BFA26010A37D",
-                      "path":  "publish/System.Security.Cryptography.Encoding.dll"
+                      "path":  "System.Security.Cryptography.Encoding.dll"
                   },
                   {
                       "hash":  "57D37432E4F7DA6D7972EB4BB3D4F165BE8E213A11330FB6A67A2FA61DE2A5C6",
-                      "path":  "publish/System.Security.Cryptography.OpenSsl.dll"
+                      "path":  "System.Security.Cryptography.OpenSsl.dll"
                   },
                   {
                       "hash":  "CFBC700B7792F9CE85E07C3D941D52B9228768E47559FBC7EDABBC0A128D7846",
-                      "path":  "publish/System.Security.Cryptography.Primitives.dll"
+                      "path":  "System.Security.Cryptography.Primitives.dll"
                   },
                   {
                       "hash":  "9E0863F625C0ED9B294C00413E24A2FD0F3865259F6C4E7D9E6153EEB381B347",
-                      "path":  "publish/System.Security.Cryptography.X509Certificates.dll"
+                      "path":  "System.Security.Cryptography.X509Certificates.dll"
                   },
                   {
                       "hash":  "6AC946FDE6CA5D76D58935407164A505C59405C36B97CA1223B8240B9B857265",
-                      "path":  "publish/System.Security.dll"
+                      "path":  "System.Security.dll"
                   },
                   {
                       "hash":  "486B44D3100B6344BA62F765CA976F2C2B83646FACFCDBB7DE9A1A22FAF747C4",
-                      "path":  "publish/System.Security.Principal.dll"
+                      "path":  "System.Security.Principal.dll"
                   },
                   {
                       "hash":  "45D53E241C6460CAD5AD4D86A8405E71BC2AA31A23E3A9F38BDB73ACEA17EAC0",
-                      "path":  "publish/System.Security.Principal.Windows.dll"
+                      "path":  "System.Security.Principal.Windows.dll"
                   },
                   {
                       "hash":  "B1741056F1AC4CE99A26D44E690A595CFC2059AE5EC44A33F2756BE707A66A89",
-                      "path":  "publish/System.Security.SecureString.dll"
+                      "path":  "System.Security.SecureString.dll"
                   },
                   {
                       "hash":  "B46E53C1908E34BA1EE93036D926BF8D66AF54887897090A7507E7AAD336E65A",
-                      "path":  "publish/System.ServiceModel.Web.dll"
+                      "path":  "System.ServiceModel.Web.dll"
                   },
                   {
                       "hash":  "6F8D7CC743B58F2EE959BC379B2CF889242D23C3791BB2B48364140A13E2AFF6",
-                      "path":  "publish/System.ServiceProcess.dll"
+                      "path":  "System.ServiceProcess.dll"
                   },
                   {
                       "hash":  "DB2B836B0B12C5AE7FA86AA803AC023005294E9DD54A487B340308BCFBD98803",
-                      "path":  "publish/System.Text.Encoding.CodePages.dll"
+                      "path":  "System.Text.Encoding.CodePages.dll"
                   },
                   {
                       "hash":  "9106B70DA28FFD4D2FC5EC3915A2ECC59989179F16C04CA18658B0B7AB0F2043",
-                      "path":  "publish/System.Text.Encoding.dll"
+                      "path":  "System.Text.Encoding.dll"
                   },
                   {
                       "hash":  "29FCDFF9865E0E84D0CB5A55AC4CD2B0DA791BB5A6502146BACF6BEEB8C821E6",
-                      "path":  "publish/System.Text.Encoding.Extensions.dll"
+                      "path":  "System.Text.Encoding.Extensions.dll"
                   },
                   {
                       "hash":  "5730704F8DF8BC920F5F137AD1ADD3B9AAC0179D951B2716A8272805B050608F",
-                      "path":  "publish/System.Text.Encodings.Web.dll"
+                      "path":  "System.Text.Encodings.Web.dll"
                   },
                   {
                       "hash":  "DD8C1189399E028CF4DECE9F4FDD0C1EA5093728F8EB8B7A497557C2E9222DF6",
-                      "path":  "publish/System.Text.Json.dll"
+                      "path":  "System.Text.Json.dll"
                   },
                   {
                       "hash":  "3BC36C75645FD8CD5F8BBAA7259DE8E69D0626759F67B586910B54A0CA8173DC",
-                      "path":  "publish/System.Text.RegularExpressions.dll"
+                      "path":  "System.Text.RegularExpressions.dll"
                   },
                   {
                       "hash":  "9F08A16F5535552637720FDF1138AA8998781921B0937A0DDDBD1D14E5AF14C4",
-                      "path":  "publish/System.Threading.Channels.dll"
+                      "path":  "System.Threading.Channels.dll"
                   },
                   {
                       "hash":  "58D58DF5BD68CEC47D0F647D1A54690B19A9E6EE8F3636BFE6F0B50D99D8C853",
-                      "path":  "publish/System.Threading.dll"
+                      "path":  "System.Threading.dll"
                   },
                   {
                       "hash":  "80D6F34319D7C6CF17E263D2A94DCCE7864E65BE7650D924D186E9C40F62333A",
-                      "path":  "publish/System.Threading.Overlapped.dll"
+                      "path":  "System.Threading.Overlapped.dll"
                   },
                   {
                       "hash":  "7E664CC9437A23307727A7E3168B4EE46C66D737D7F97A3FD573C87635A1204E",
-                      "path":  "publish/System.Threading.Tasks.Dataflow.dll"
+                      "path":  "System.Threading.Tasks.Dataflow.dll"
                   },
                   {
                       "hash":  "02337DEF47E9FED052AE9A320A8C742290838459D88BCF9A68BE49D32D78864A",
-                      "path":  "publish/System.Threading.Tasks.dll"
+                      "path":  "System.Threading.Tasks.dll"
                   },
                   {
                       "hash":  "F817784A84EB345A1F6DB7C42475A6D4D0E56F46C6B1C695A7AF68FBEF78A51D",
-                      "path":  "publish/System.Threading.Tasks.Extensions.dll"
+                      "path":  "System.Threading.Tasks.Extensions.dll"
                   },
                   {
                       "hash":  "14F684B6F5AB8E2FA05DAE094185E85B3C6E0DD91180D9C8EE9292B54B138B7F",
-                      "path":  "publish/System.Threading.Tasks.Parallel.dll"
+                      "path":  "System.Threading.Tasks.Parallel.dll"
                   },
                   {
                       "hash":  "B22930D9DCE22B96C087800FDB7E3D09A6348E1B231CD21FD6B04162979C374C",
-                      "path":  "publish/System.Threading.Thread.dll"
+                      "path":  "System.Threading.Thread.dll"
                   },
                   {
                       "hash":  "55B4A8D950C3C3CD6AD77F0E4EC5704EB09DAD3963732B2D4D7E40326674DAA4",
-                      "path":  "publish/System.Threading.ThreadPool.dll"
+                      "path":  "System.Threading.ThreadPool.dll"
                   },
                   {
                       "hash":  "8E20FAC4FEFD19B91C8B08F4EF1FC0F04EA9112644C74FB3AC818175AAA74535",
-                      "path":  "publish/System.Threading.Timer.dll"
+                      "path":  "System.Threading.Timer.dll"
                   },
                   {
                       "hash":  "A2702EF8EC508A144E8D043382C19585E1CEC424823F301FB5603FFFCA336E76",
-                      "path":  "publish/System.Transactions.dll"
+                      "path":  "System.Transactions.dll"
                   },
                   {
                       "hash":  "A32D77E8291B3D380FB8F3868967EC02E25403C99CC7FA4F8A95CBB06E10E360",
-                      "path":  "publish/System.Transactions.Local.dll"
+                      "path":  "System.Transactions.Local.dll"
                   },
                   {
                       "hash":  "1BD76D1F555F4BA730FEE069284A4484AB534D0A3D00CE2157DFA1330D69E61E",
-                      "path":  "publish/System.ValueTuple.dll"
+                      "path":  "System.ValueTuple.dll"
                   },
                   {
                       "hash":  "5EDE05CDB16A7B2F873A034BC5498C778BE2CE4197DDC8F6B3572A8B571E5EAE",
-                      "path":  "publish/System.Web.dll"
+                      "path":  "System.Web.dll"
                   },
                   {
                       "hash":  "2E081D9B9FFAC86552CAFC915BABA8C7936DC662E1558083C34E8CC62F8B106A",
-                      "path":  "publish/System.Web.HttpUtility.dll"
+                      "path":  "System.Web.HttpUtility.dll"
                   },
                   {
                       "hash":  "89B11E4466F524764A08B3A27F45E7D989F7E2FDF2E0E57072914D73E28943DF",
-                      "path":  "publish/System.Windows.dll"
+                      "path":  "System.Windows.dll"
                   },
                   {
                       "hash":  "0BBAE39013DC4715674FA0A8A09072BB289B2D4ECE39DE6515BC08B0BACFB8EC",
-                      "path":  "publish/System.Xml.dll"
+                      "path":  "System.Xml.dll"
                   },
                   {
                       "hash":  "D1690E90373C171BB49F415C1D0C00CA76FE6BE38CAD4CEE654E703050A18A6D",
-                      "path":  "publish/System.Xml.Linq.dll"
+                      "path":  "System.Xml.Linq.dll"
                   },
                   {
                       "hash":  "FEF796454FF821DEF1C530231748AB8C41FFAD9181C07E66F4D7981862E9788A",
-                      "path":  "publish/System.Xml.ReaderWriter.dll"
+                      "path":  "System.Xml.ReaderWriter.dll"
                   },
                   {
                       "hash":  "48F89ED728E5CAF6221259B1FFF20EE534D76DD86D2CC5A59A3606FA1BE8BD31",
-                      "path":  "publish/System.Xml.Serialization.dll"
+                      "path":  "System.Xml.Serialization.dll"
                   },
                   {
                       "hash":  "DF6529581025837AD454D21FF42E3F3A7E4465E1B6BF5DE2A2EA2645F8DFC503",
-                      "path":  "publish/System.Xml.XDocument.dll"
+                      "path":  "System.Xml.XDocument.dll"
                   },
                   {
                       "hash":  "EEDBA37F8BCF3F8083758E98DBEB6D245D5777A21B3643AEEB92BD890DD1BD77",
-                      "path":  "publish/System.Xml.XmlDocument.dll"
+                      "path":  "System.Xml.XmlDocument.dll"
                   },
                   {
                       "hash":  "62160ED2F6D6630EA6C38941D3524E5E1047AB924C5AE03D6B1C6F77B22A3BFB",
-                      "path":  "publish/System.Xml.XmlSerializer.dll"
+                      "path":  "System.Xml.XmlSerializer.dll"
                   },
                   {
                       "hash":  "CE3C1332F5317981C1B8396BB1FE186026FDAAC1728D8EA4BA35948F02FDD113",
-                      "path":  "publish/System.Xml.XPath.dll"
+                      "path":  "System.Xml.XPath.dll"
                   },
                   {
                       "hash":  "B8E17B65D49C1219B5C3990391A0EF106F261979B3FADA20A147E4CAB2EFD1C2",
-                      "path":  "publish/System.Xml.XPath.XDocument.dll"
+                      "path":  "System.Xml.XPath.XDocument.dll"
                   },
                   {
                       "hash":  "111FDDDA3D7F523E41D8FE55380FA60CE4FA09EF0984972E97030790D18AA7D6",
-                      "path":  "publish/Tmds.DBus.Protocol.dll"
+                      "path":  "Tmds.DBus.Protocol.dll"
                   },
                   {
                       "hash":  "F7111F2F1C9E7DEEB1286E1B20F84810EFA79252781DDC289EE1053781BA80D5",
-                      "path":  "publish/WindowsBase.dll"
+                      "path":  "WindowsBase.dll"
                   },
                   {
                       "hash":  "CDB30E3FE2B7DBD27182EE43B9CAB11BF7A1D4D8FF83329EAF6157BE9927C65C",
-                      "path":  "publish/YoutubeExplode.Converter.dll"
+                      "path":  "YoutubeExplode.Converter.dll"
                   },
                   {
                       "hash":  "B14B79B0A7214834B25FB978392F752D7E01325FD513D13E29E2E21A50049B78",
-                      "path":  "publish/YoutubeExplode.dll"
+                      "path":  "YoutubeExplode.dll"
                   },
                   {
                       "hash":  "70AB2B459EE3B3DAF9FCA6F867A8EC0C4AD65E9D5194DC2A3DCE9AE72155F484",
-                      "path":  "publish/ZERTER.deps.json"
+                      "path":  "ZERTER.deps.json"
                   },
                   {
                       "hash":  "6745FA0F78350B3EB0590EB4E5CBE1993940BA7D26AE0E56115D98AF77012FE9",
-                      "path":  "publish/ZERTER.dll"
+                      "path":  "ZERTER.dll"
                   },
                   {
                       "hash":  "8EA5425658456F03DE37F34D1C8E8846802E71C87BE97A105193D1D4CF9D6D81",
-                      "path":  "publish/ZERTER.exe"
+                      "path":  "ZERTER.exe"
                   },
                   {
                       "hash":  "E07D4D1EAABC38B2E59EB14D2D06366CD949E426F665B6A0944F98210248E0B4",
-                      "path":  "publish/ZERTER.pdb"
+                      "path":  "ZERTER.pdb"
                   },
                   {
                       "hash":  "FA0C3F125031A030A5A076675D3F1AB43D9BB81714EA8A8B300513B3C33BDDCE",
-                      "path":  "publish/ZERTER.runtimeconfig.json"
+                      "path":  "ZERTER.runtimeconfig.json"
                   },
                   {
                       "hash":  "EE2BD1D6F6982F3F74C02303D52AB160C443A5406DA69AA3C56C1B4D58F2E350",
-                      "path":  "publish/wwwroot/youtube/index.html"
+                      "path":  "wwwroot/youtube/index.html"
                   },
                   {
                       "hash":  "A86919E5ED5F221161E267B480A2B4CE42624E43A24572C520023948885BC3AF",
-                      "path":  "publish/wwwroot/youtube/css/styles.css"
+                      "path":  "wwwroot/youtube/css/styles.css"
                   },
                   {
                       "hash":  "079919E3400BA9BC0D569F5634CC41B2FD1B8E7A721B2B473D21F10FE2FA7F6B",
-                      "path":  "publish/wwwroot/youtube/Resources/favicon_32x32.png"
+                      "path":  "wwwroot/youtube/Resources/favicon_32x32.png"
                   },
                   {
                       "hash":  "0E7B53EC67D98D5CCECE3BB1B146D80D020C606DD99D1C30C3D3F7109D495BD3",
-                      "path":  "publish/wwwroot/youtube/Resources/youtube_logo.png"
+                      "path":  "wwwroot/youtube/Resources/youtube_logo.png"
                   },
                   {
                       "hash":  "554F80F511DA8767C08EC32CA39BB608E5B6F50E84B17CE865D9006753DAE8D0",
-                      "path":  "publish/wwwroot/youtube/Resources/youtube_logo.webp"
+                      "path":  "wwwroot/youtube/Resources/youtube_logo.webp"
                   }
               ],
     "version":  "1.5.2"
